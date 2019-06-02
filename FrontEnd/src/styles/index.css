@@ -90,3 +90,15 @@ code {
   animation-name: fadeIn;
   animation-duration: 4s;
 }
+
+.homePageAnimation{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 370px;
+  color: green;
+  width: 200px;
+  border: 2px solid;
+  border-radius: 3em;
+  border-color: red;
+  text-align: center;
+}

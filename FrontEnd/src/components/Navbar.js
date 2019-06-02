@@ -13,6 +13,7 @@ import {
     DropdownItem,
     Fade
   } from "reactstrap";
+import {Link} from 'react-router-dom'
 
   function NavBar(props){
 
