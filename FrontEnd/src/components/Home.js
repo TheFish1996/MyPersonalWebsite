@@ -8,28 +8,28 @@ let wordsArray = ["React", "Redux", "Node.js"]
 
 function Home(props){
 
-  const [cyclingName, setCyclingName] = useState(wordsArray[0])
-  const [counter, setCounter] = useState(1)
-  const [updating, setUpdating] = useState(true)
+  const [cyclingName, setCyclingName] = useState(wordsArray[0]) //sets the cycling name
+  const [counter, setCounter] = useState(1)                     //sets the counter to 1 because cycling name is 0
+  const [updating, setUpdating] = useState(true)                //updating status of cyclerm by default true so we can move forward
 
-   function nameChange(){
-     if(counter === 3){
+   function nameChange(){                   //function for when the name needs to change
+     if(counter === 3){                     //if the counter is equal to 3 we will set it back to 1 and then se the cycling name back to 0      
       setCounter(1)
       setCyclingName(wordsArray[0])
      } else {
-      setCounter(counter + 1)
+      setCounter(counter + 1)               //if not we increment counter and set the name to the new counter value
       setCyclingName(wordsArray[counter])
      }
    }
 
    useEffect(() => {
-    if(updating === false){
+    if(updating === false){               //if updating is false aka we are moviong backwards, we set the updating to true and change the name after 1500 seconds(animation time)
       setTimeout(() => {
         setUpdating(true)
         nameChange()
       }, 1500)
     } else {
-      setTimeout(() => {
+      setTimeout(() => {                //if updating  is true and we are animation forward, we set the updating to false after 1500 seconds to let the animation finish
         setUpdating(false)
       }, 1500)
     }
