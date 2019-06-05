@@ -25,7 +25,7 @@ import {Link} from 'react-router-dom'
 
       return (
         <div className="fadeIn">
-          <Navbar dark expand="md">
+          <Navbar fixed="top" dark expand="md">
             <NavbarBrand href="/" className="navbarTitle mr-auto"><span className="navbarTitle">Jonathan Fishkin</span></NavbarBrand>
             <NavbarToggler href="/" onClick={toggle} />
             <Collapse isOpen={isOpen} navbar>
