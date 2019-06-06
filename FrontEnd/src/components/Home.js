@@ -1,10 +1,11 @@
+import '../styles/App.css';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './Navbar'
 import {Fade, Container, Row, Col} from 'reactstrap'
 
 const video = require("../img/mainTheme.mp4")
-let wordsArray = ["React", "Redux", "Node.js"]
+let wordsArray = ["React", "Redux", "Node.js"];
 
 function Home(props){
 
@@ -37,7 +38,6 @@ function Home(props){
 
   return (
     <div>
-      <video className="video-container" src={video} autoPlay muted loop></video>
       <NavBar />
       <Container fluid className="homePageAnimation">
         <Row>
