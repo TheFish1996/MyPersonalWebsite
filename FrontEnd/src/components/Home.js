@@ -23,15 +23,15 @@ function Home(props){
    }
 
    useEffect(() => {
-    if(updating === false){               //if updating is false aka we are moviong backwards, we set the updating to true and change the name after 1500 seconds(animation time)
+    if(updating === false){               //if updating is false aka we are moviong backwards, we set the updating to true and change the name after 500 seconds(animation time)
       setTimeout(() => {
         setUpdating(true)
         nameChange()
-      }, 1500)
+      }, 500)
     } else {
-      setTimeout(() => {                //if updating  is true and we are animation forward, we set the updating to false after 1500 seconds to let the animation finish
+      setTimeout(() => {                //if updating  is true and we are animation forward, we set the updating to false after 2000 seconds to let the animation finish and wait
         setUpdating(false)
-      }, 1500)
+      }, 2000)
     }
    })
 
@@ -44,8 +44,8 @@ function Home(props){
           <Col>
           {
             updating === true
-            ? <h1 className="frontpageTextAnimation">{cyclingName}</h1> 
-            : <h1 className="frontpageTextAnimationBack">{cyclingName}</h1>
+            ? <p className="frontpageTextAnimation">{cyclingName}</p> 
+            : <p className="frontpageTextAnimationBack">{cyclingName}</p>
           }
           </Col>
         </Row>

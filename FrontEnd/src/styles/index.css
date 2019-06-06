@@ -26,6 +26,40 @@ code {
   font-family: 'Dosis', sans-serif;
 }
 
+.homePageAnimation{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 600px;
+  width: 230px;
+  font-size: 40px;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.frontpageTextAnimation {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .20em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+.frontpageTextAnimationBack {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid olivedrab; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .20em; /* Adjust as needed */
+  animation: 
+    typingback 0.5s steps(60,end);
+}
+
+
+
 @media (min-aspect-ratio: 16/9) {
   .video-container {
     width: 100%;
@@ -44,24 +78,43 @@ code {
     .navbarTitle {
       font-size: 40px;
     }
+    .homePageAnimation{
+      margin-top: 400px;
+      font-size: 30px;
+      width: 150px;
+    }
   }
   
   @media screen and (max-width: 950px) {
     .navbarTitle {
       font-size: 30px;
-    } 
+    }
+    .homePageAnimation{
+      margin-top: 350px;
+      font-size: 20px;
+      width: 120px;
+    }
   }
-  
   
   @media screen and (max-width: 650px) {
     .navbarTitle {
       font-size: 20px;
+    }
+    .homePageAnimation{
+      margin-top: 250px;
+      font-size: 20px;
+      width: 120px;
     }
   }
   
   @media screen and (max-width: 480px) {
     .navbarTitle {
       font-size: 10px;
+    }
+    .homePageAnimation{
+      margin-top: 100px;
+      font-size: 20px;
+      width: 120px;
     }
   }
 
@@ -91,36 +144,6 @@ code {
   animation-duration: 4s;
 }
 
-.homePageAnimation{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 600px;
-  width: 200px;
-  text-align: center;
-  color: red;
-}
-
-.frontpageTextAnimation {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    typing 1.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-.frontpageTextAnimationBack {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .10em; /* Adjust as needed */
-  animation: 
-    blink-caret .75s step-end infinite,
-    typingback 1.5s steps(40,end);
-}
 
 /* The typing effect */
 @keyframes typing {
@@ -136,5 +159,5 @@ code {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: olivedrab }
 }

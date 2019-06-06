@@ -34,10 +34,10 @@ import {Link} from 'react-router-dom'
                   <NavLink>Home</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink>Projects</NavLink>
+                  <NavLink>About Me</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink>Technical Skills</NavLink>
+                  <NavLink>Projects</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
                   <NavLink>Job Experience</NavLink>
