@@ -1,5 +1,5 @@
 body{
-  background: url('../img/tree.jpg') no-repeat center center fixed;
+  background: url('../img/dawn.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -18,15 +18,14 @@ body{
 }
 
 .homePageAnimation{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: auto;
   width: 230px;
   font-size: 40px;
   font-family: 'Dosis', sans-serif;
   text-align: center;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40vh;
 }
 
 .frontpageTextAnimation {

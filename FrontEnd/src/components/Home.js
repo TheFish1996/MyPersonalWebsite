@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from './Navbar'
 import {Fade, Container, Row, Col} from 'reactstrap'
+import {getAllNews} from '../config/data'
 
 const video = require("../img/mainTheme.mp4")
 let wordsArray = ["React", "Redux", "Node.js"];
@@ -12,6 +13,7 @@ function Home(props){
   const [cyclingName, setCyclingName] = useState(wordsArray[0]) //sets the cycling name
   const [counter, setCounter] = useState(1)                     //sets the counter to 1 because cycling name is 0
   const [updating, setUpdating] = useState(true)                //updating status of cyclerm by default true so we can move forward
+  const [newsData, setNewsData] = useState([])
 
    function nameChange(){                   //function for when the name needs to change
      if(counter === 3){                     //if the counter is equal to 3 we will set it back to 1 and then se the cycling name back to 0      
@@ -35,6 +37,14 @@ function Home(props){
       }, 2000)
     }
    })
+
+   useEffect(() => {
+      const response = async () => {
+        let result = await getAllNews();
+        setNewsData(result.articles)
+      }
+      response();
+   }, [])
 
   return (
     <div>
