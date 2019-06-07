@@ -24,8 +24,7 @@ body{
   text-align: center;
   color: white;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 40vh;
+  margin-top: 25vh;
 }
 
 .frontpageTextAnimation {
@@ -47,6 +46,10 @@ body{
   letter-spacing: .20em; /* Adjust as needed */
   animation: 
     typingback 0.5s steps(60,end);
+}
+
+.newsHomePage{
+  margin-top: 10vh;
 }
 
 

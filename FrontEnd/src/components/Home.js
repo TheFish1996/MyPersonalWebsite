@@ -49,6 +49,13 @@ function Home(props){
   return (
     <div>
       <NavBar />
+      <Container fluid className="newsHomePage">
+          <Row>
+            <Col className="d-flex">
+              <h1 className="ml-auto">Testing</h1>
+            </Col>
+          </Row>
+      </Container>
       <Container fluid className="homePageAnimation">
         <Row>
           <Col>
