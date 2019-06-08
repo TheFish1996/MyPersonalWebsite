@@ -17,14 +17,19 @@ body{
   font-family: 'Dosis', sans-serif;
 }
 
-.homePageAnimation{
-  width: 230px;
+.homePage{
+  color: white;
+  margin-top: 10vh;
+}
+
+.animatedText{
   font-size: 40px;
   font-family: 'Dosis', sans-serif;
   text-align: center;
-  color: white;
+  width: 230px;
+  margin-top: 15vh;
   margin-left: auto;
-  margin-top: 25vh;
+  margin-right:auto;
 }
 
 .frontpageTextAnimation {
@@ -49,7 +54,20 @@ body{
 }
 
 .newsHomePage{
-  margin-top: 10vh;
+  margin-top: 100px;
+}
+
+.blackMask{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-color: rgba(0,0,0,.7);
 }
 
 
@@ -72,7 +90,7 @@ body{
     .navbarTitle {
       font-size: 40px;
     }
-    .homePageAnimation{
+    .animatedText{
       font-size: 30px;
       width: 150px;
     }
@@ -82,7 +100,7 @@ body{
     .navbarTitle {
       font-size: 30px;
     }
-    .homePageAnimation{
+    .animatedText{
       font-size: 20px;
       width: 120px;
     }
@@ -92,7 +110,7 @@ body{
     .navbarTitle {
       font-size: 20px;
     }
-    .homePageAnimation{
+    .animatedText{
       font-size: 20px;
       width: 120px;
     }
@@ -102,7 +120,7 @@ body{
     .navbarTitle {
       font-size: 10px;
     }
-    .homePageAnimation{
+    .animatedText{
       font-size: 20px;
       width: 120px;
     }
