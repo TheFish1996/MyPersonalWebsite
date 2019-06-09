@@ -53,7 +53,7 @@ function NewsCarousel(props){
                 onExited={onExited}
                 key={index}
             >
-                <img className="d-block w-100" src={item.urlToImage} alt={"slide1"} />
+                <img className="d-block w-100" height="250px" src={item.urlToImage} alt={"slide1"} />
                 <div className="blackMask"></div>
                 <a href={item.url} target="_blank"><CarouselCaption className="text-white"  captionText={item.title} captionHeader={item.source.name} /></a>
             </CarouselItem>

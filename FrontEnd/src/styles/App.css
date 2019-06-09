@@ -57,6 +57,11 @@ body{
   margin-top: 100px;
 }
 
+.newsHomePageCarousel{
+  margin-left: auto;
+  margin-right: 0;
+}
+
 .blackMask{
   position: absolute;
   top: 0;
@@ -94,6 +99,9 @@ body{
       font-size: 30px;
       width: 150px;
     }
+    .newsHomePageCarousel{
+      margin-right: auto;
+    }
   }
   
   @media screen and (max-width: 950px) {
@@ -103,6 +111,9 @@ body{
     .animatedText{
       font-size: 20px;
       width: 120px;
+    }
+    .newsHomePageCarousel{
+      margin-right: auto;
     }
   }
   
@@ -114,6 +125,9 @@ body{
       font-size: 20px;
       width: 120px;
     }
+    .newsHomePageCarousel{
+      margin-right: auto;
+    }
   }
   
   @media screen and (max-width: 480px) {
@@ -123,6 +137,9 @@ body{
     .animatedText{
       font-size: 20px;
       width: 120px;
+    }
+    .newsHomePageCarousel{
+      margin-right: 100px;
     }
   }
 

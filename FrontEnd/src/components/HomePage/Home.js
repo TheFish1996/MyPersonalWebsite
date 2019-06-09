@@ -31,7 +31,7 @@ function Home(props){
       <NavBar />
       <Container fluid className="homePage">
         <Row className="newsHomePage">
-          <Col xs="3" sm="2" md="2" lg="3" className="ml-auto">
+          <Col xs="5" sm="5" md="5" lg="3" className="newsHomePageCarousel">
             <NewsCarousel newsData={newsData} />
           </Col>
         </Row>
