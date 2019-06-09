@@ -55,7 +55,10 @@ function NewsCarousel(props){
             >
                 <img className="d-block w-100" height="250px" src={item.urlToImage} alt={"slide1"} />
                 <div className="blackMask"></div>
-                <a href={item.url} target="_blank"><CarouselCaption className="text-white"  captionText={item.title} captionHeader={item.source.name} /></a>
+                <div class="text-white carousel-caption">
+                    <a href={item.url} target="_blank"><h3>{item.source.name}</h3></a>
+                    <p>{item.title}</p>
+                </div>
             </CarouselItem>
         );
     });
