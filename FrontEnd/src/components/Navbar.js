@@ -35,7 +35,7 @@ import {Link} from 'react-router-dom'
                   <NavLink active={isActive === "Home" && true} href="/">Home</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink active={isActive === "About Me" && true}>About Me</NavLink>
+                  <NavLink active={isActive === "About Me" && true} href="/aboutme">About Me</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
                   <NavLink active={isActive === "Projects" && true}>Projects</NavLink>
