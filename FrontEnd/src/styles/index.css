@@ -12,3 +12,19 @@ code {
     monospace;
 }
 
+.blackMasktest{
+  margin-left: 73vw;
+  background-color: rgba(0,0,0,0.7);
+}
+
+@media screen and (max-width: 650px) {
+    .blackMasktest{
+      margin-left: 65vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blackMasktest{
+      margin-left: 60vw;
+    }
+}
