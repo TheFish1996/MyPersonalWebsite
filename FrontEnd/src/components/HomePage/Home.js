@@ -1,4 +1,4 @@
-import '../../styles/App.css';
+import '../../styles/Home.css';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import AnimatedText from './AnimatedText'
@@ -11,8 +11,6 @@ import {
   Col, 
 } from 'reactstrap'
 import {getAllNews} from '../../config/data'
-
-let wordsArray = ["React", "Redux", "Node.js"];
 
 function Home(props){
 
@@ -28,7 +26,7 @@ function Home(props){
 
   return (
     <div>
-      <NavBar />
+      <NavBar pageName={"Home"} />
       <Container fluid className="homePage">
         <Row className="newsHomePage">
           <Col xs="13" sm="8" md="7" lg="5" xl="3" className="newsHomePageCarousel">

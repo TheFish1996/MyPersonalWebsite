@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {
     Collapse,
     Navbar,
@@ -7,10 +7,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
     Fade
   } from "reactstrap";
 import {Link} from 'react-router-dom'
@@ -18,6 +14,11 @@ import {Link} from 'react-router-dom'
   function NavBar(props){
 
     const [isOpen, setNavbarCollapse] = useState(false)
+    const [isActive, setIsActive] = useState("")
+
+    useEffect(() => {
+      setIsActive(props.pageName)
+    })
 
     function toggle() {
       setNavbarCollapse(!isOpen)
@@ -31,16 +32,16 @@ import {Link} from 'react-router-dom'
             <Collapse isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem className="ml-auto">
-                  <NavLink>Home</NavLink>
+                  <NavLink active={isActive === "Home" && true} href="/">Home</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink>About Me</NavLink>
+                  <NavLink active={isActive === "About Me" && true}>About Me</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink>Projects</NavLink>
+                  <NavLink active={isActive === "Projects" && true}>Projects</NavLink>
                 </NavItem>
                 <NavItem className="ml-auto">
-                  <NavLink>Job Experience</NavLink>
+                  <NavLink active={isActive === "Job Experience" && true}>Job Experience</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
