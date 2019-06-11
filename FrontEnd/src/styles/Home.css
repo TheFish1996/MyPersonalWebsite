@@ -98,6 +98,23 @@ body{
   color: white;
 }
 
+.iconsHomePage a:link{
+  text-decoration: none;
+  color: white;
+}
+
+.iconsHomePage a:hover{
+  color: white;
+}
+
+.iconsHomePage a:active{
+  color: white;
+}
+
+.iconsHomePage a:visited{
+  color: white;
+}
+
 
 @media (min-aspect-ratio: 16/9) {
   .video-container {
@@ -164,41 +181,6 @@ body{
       font-size: 35px;
     }
   }
-
-  @media screen and (max-height: 768px){
-    .iconsHomePage{
-      margin-top: 10vw;
-    }
-  }
-
-  @media screen and (max-height: 800px){
-    .iconsHomePage{
-      margin-top: 14vw;
-    }
-  }
-
-  @media screen and (max-height: 900px){
-    .iconsHomePage{
-      margin-top: 16vw;
-    }
-  }
-
-  .iconsHomePage a:link{
-    text-decoration: none;
-    color: white;
-  }
-
-  .iconsHomePage a:hover{
-    color: white;
-  }
-
-  .iconsHomePage a:active{
-    color: white;
-  }
-
-  .iconsHomePage a:visited{
-    color: white;
-  }
   
   @media screen and (max-width: 480px) {
     .navbarTitle {
@@ -215,6 +197,19 @@ body{
     .iconsHomePage{
       margin-left: 1vw;
       font-size: 35px;
+    }
+  }
+
+
+  @media screen and (max-height: 768px){
+    .iconsHomePage{
+      margin-top: 10vw;
+    }
+  }
+
+  @media screen and (max-height: 800px){
+    .iconsHomePage{
+      margin-top: 12vw;
     }
   }
 
