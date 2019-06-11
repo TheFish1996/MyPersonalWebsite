@@ -200,16 +200,9 @@ body{
     }
   }
 
-
   @media screen and (max-height: 768px){
     .iconsHomePage{
       margin-top: 10vw;
-    }
-  }
-
-  @media screen and (max-height: 800px){
-    .iconsHomePage{
-      margin-top: 12vw;
     }
   }
 
