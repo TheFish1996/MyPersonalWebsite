@@ -30,7 +30,7 @@ function Home(props){
       <NavBar pageName={"Home"} />
       <Container fluid className="homePage">
         <Row className="newsHomePage">
-          <Col xs="11" sm="8" md="7" lg="6" xl="3" className="newsHomePageCarousel">
+          <Col xs="11" sm="8" md="7" lg="5" xl="4" className="newsHomePageCarousel">
             <NewsCarousel newsData={newsData} />
           </Col>
         </Row>
