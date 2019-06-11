@@ -165,17 +165,39 @@ body{
     }
   }
 
+  @media screen and (max-height: 768px){
+    .iconsHomePage{
+      margin-top: 10vw;
+    }
+  }
+
+  @media screen and (max-height: 800px){
+    .iconsHomePage{
+      margin-top: 14vw;
+    }
+  }
+
+  @media screen and (max-height: 900px){
+    .iconsHomePage{
+      margin-top: 16vw;
+    }
+  }
+
   .iconsHomePage a:link{
     text-decoration: none;
     color: white;
   }
 
   .iconsHomePage a:hover{
-    color: grey;
+    color: white;
   }
 
   .iconsHomePage a:active{
-    color: grey;
+    color: white;
+  }
+
+  .iconsHomePage a:visited{
+    color: white;
   }
   
   @media screen and (max-width: 480px) {
