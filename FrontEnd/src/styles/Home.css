@@ -170,16 +170,12 @@ body{
     color: white;
   }
 
-  .iconsHomePage a:visited{
-    color: white;
-  }
-
   .iconsHomePage a:hover{
     color: grey;
   }
 
   .iconsHomePage a:active{
-    color: lightblue;
+    color: grey;
   }
   
   @media screen and (max-width: 480px) {
