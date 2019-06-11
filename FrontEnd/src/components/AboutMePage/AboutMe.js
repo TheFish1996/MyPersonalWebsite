@@ -13,8 +13,8 @@ function AboutMe(props){
         <div>
             <NavBar pageName={"About Me"} />
             <Container fluid className="aboutMePage">
-                <Row className="ml-auto">
-                    <Col>
+                <Row>
+                    <Col className="d-flex" style={{justifyContent: "center"}}>
                         <h1>PlaceHolder</h1>
                     </Col>
                 </Row>

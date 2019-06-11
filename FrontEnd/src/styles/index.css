@@ -12,19 +12,47 @@ code {
     monospace;
 }
 
-.blackMasktest{
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+}
+
+.blackMaskNavbar{
   margin-left: 73vw;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.9);
 }
 
 @media screen and (max-width: 650px) {
-    .blackMasktest{
+    .blackMaskNavbar{
       margin-left: 65vw;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .blackMasktest{
+    .blackMaskNavbar{
       margin-left: 60vw;
     }
 }
+
+

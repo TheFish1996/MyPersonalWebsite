@@ -29,7 +29,7 @@ import {Link} from 'react-router-dom'
           <Navbar fixed="top" dark expand="md">
             <NavbarBrand href="/" className="navbarTitle mr-auto"><span className="navbarTitle">Jonathan Fishkin</span></NavbarBrand>
             <NavbarToggler href="/" onClick={toggle} />
-            <Collapse className={isOpen && "blackMasktest"} isOpen={isOpen} navbar>
+            <Collapse className={isOpen && "blackMaskNavbar"} isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem className="ml-auto">
                   <NavLink active={isActive === "Home" && true} href="/">Home</NavLink>
