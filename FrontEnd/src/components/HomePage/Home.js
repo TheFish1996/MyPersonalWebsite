@@ -11,6 +11,7 @@ import {
   Col, 
 } from 'reactstrap'
 import {getAllNews} from '../../config/data'
+const pdf = require("../../img/Resume.pdf")
 
 function Home(props){
 
@@ -29,7 +30,7 @@ function Home(props){
       <NavBar pageName={"Home"} />
       <Container fluid className="homePage">
         <Row className="newsHomePage">
-          <Col xs="10" sm="8" md="8" lg="6" xl="3" className="newsHomePageCarousel">
+          <Col xs="11" sm="8" md="7" lg="6" xl="3" className="newsHomePageCarousel">
             <NewsCarousel newsData={newsData} />
           </Col>
         </Row>
@@ -40,16 +41,16 @@ function Home(props){
         </Row>
         <Row className="iconsHomePage">
           <Col xs= "2" md="2" lg="2" xl="2">
-            <i className="fab fa-linkedin"></i>
+            <a target="_blank" href="https://www.linkedin.com/in/jonathan-fishkin-966737160/"><i className="fab fa-linkedin"></i></a>
           </Col>
           <Col xs= "2" md="2" lg="2">
-            <i className="fab fa-github"></i>
+            <a target="_blank" href="https://github.com/TheFish1996"><i className="fab fa-github"></i></a>
           </Col>
           <Col xs= "2" md="2" lg="2" xl="2">
-            <i className="far fa-file-alt"></i>
+            <a target="_blank" href={pdf}><i className="far fa-file-alt"></i></a>
           </Col>
           <Col xs= "2" md="2" lg="2" xl="2">
-            <i className="far fa-envelope"></i>
+            <a target="_blank" href={pdf}><i className="far fa-envelope"></i></a>
           </Col>
         </Row>
       </Container>

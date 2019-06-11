@@ -164,6 +164,23 @@ body{
       font-size: 35px;
     }
   }
+
+  .iconsHomePage a:link{
+    text-decoration: none;
+    color: white;
+  }
+
+  .iconsHomePage a:visited{
+    color: white;
+  }
+
+  .iconsHomePage a:hover{
+    color: grey;
+  }
+
+  .iconsHomePage a:active{
+    color: lightblue;
+  }
   
   @media screen and (max-width: 480px) {
     .navbarTitle {
