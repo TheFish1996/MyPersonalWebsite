@@ -1,4 +1,36 @@
+html, body {
+  height: 100%;
+}
+html {
+  overflow-y: hidden;
+}
+body {
+  overflow-y: scroll;
+}
+
+body{
+  background: url('../img/tree.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: hidden;
+}
+
 .aboutMePage{
-    color: white;
     margin-top: 10vh;
+    height: 100vh;
   }
+
+.aboutMeBeginning{
+  background-color: cadetblue;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+}
+
+.aboutMeBeginningLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  color: white;
+}

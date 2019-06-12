@@ -14,8 +14,14 @@ function AboutMe(props){
             <NavBar pageName={"About Me"} />
             <Container fluid className="aboutMePage">
                 <Row>
-                    <Col className="d-flex" style={{justifyContent: "center"}}>
-                        <h1>PlaceHolder</h1>
+                    <Col className="aboutMeBeginningLeft" sm="2" md="2" lg ="2" xl="2">
+                        <h3>Overview</h3>
+                        <h3>About Me</h3>
+                        <h3>Goals and Aspirations</h3>
+                    </Col>
+                    <Col className="aboutMeBeginning" md="6" lg="7" xl="9">
+                        <h3>PlaceHolder</h3>
+                        <h3>PlaceHolder</h3>
                     </Col>
                 </Row>
             </Container>
