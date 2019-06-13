@@ -1,14 +1,25 @@
+.navbar-test {
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
 
+}
 .aboutMePage{
-    margin-top: 15vh;
     height: 100vh;
+    background-color: black;
   }
 
 .aboutMeBeginning{
-  background-color: cadetblue;
+  margin-top: 13vh;
   color: white;
   height: 100vh;
   background-size: cover;
+  overflow-y:auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutMeBeginning p {
+  font-size: 30px;
 }
 
 .aboutMeBeginningLeft{
@@ -16,6 +27,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  margin-top: 30vh;
+  height: 20vh;
+  background-color: #923cb5;
+  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
   color: white;
 }
+
+.aboutMeBeginningLeft p {
+  font-size: 25px;
+}
+

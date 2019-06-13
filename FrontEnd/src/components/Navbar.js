@@ -15,6 +15,7 @@ import {Link} from 'react-router-dom'
 
     const [isOpen, setNavbarCollapse] = useState(false)
     const [isActive, setIsActive] = useState("")
+    const {classDefinition} = props
 
     useEffect(() => {
       setIsActive(props.pageName)
@@ -26,7 +27,7 @@ import {Link} from 'react-router-dom'
 
       return (
         <div className="fadeIn">
-          <Navbar fixed="top" dark expand="md">
+          <Navbar className={classDefinition} fixed="top" dark expand="md">
             <NavbarBrand href="/" className="navbarTitle mr-auto"><span className="navbarTitle">Jonathan Fishkin</span></NavbarBrand>
             <NavbarToggler href="/" onClick={toggle} />
             <Collapse className={isOpen && "blackMaskNavbar"} isOpen={isOpen} navbar>
