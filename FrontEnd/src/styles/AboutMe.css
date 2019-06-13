@@ -1,6 +1,5 @@
 .navbar-test {
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-color:#52007C;
 
 }
 .aboutMePage{
@@ -9,7 +8,7 @@
   }
 
 .aboutMeBeginning{
-  margin-top: 13vh;
+  margin-top: 15vh;
   color: white;
   height: 100vh;
   background-size: cover;
@@ -26,22 +25,25 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: 30vh;
   height: 20vh;
-  background-color: #923cb5;
-  background-image: linear-gradient(147deg, #923cb5 0%, #000000 74%);
+  background-color:#9253cb;
   color: white;
 }
 
 .aboutMeBeginningLeft p {
-  font-size: 25px;
+  border-left: 3px solid  black;
+  font-size: 20px;
   cursor: pointer;
+}
+
+.aboutMeBeginningLeft p {
+  padding-left: 10px;
 }
 
 .overviewElements{
   opacity: 0;
-  border-left: 3px solid  #923cb5;
+  border-left: 3px solid  #9253cb;
 	animation: fadeInOverview 1s ease-in both;
 }
 
@@ -55,4 +57,30 @@
 		transform: translate3d(0, 0, 0);
 	}
 }
+
+@media screen and (max-width: 1024px) {
+  .aboutMeBeginningLeft p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aboutMeBeginningLeft p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .aboutMeBeginningLeft p {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .aboutMeBeginningLeft p {
+    font-size: 10px;
+  }
+}
+
 

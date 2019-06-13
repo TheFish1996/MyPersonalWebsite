@@ -24,13 +24,13 @@ function AboutMe(props){
             <Container fluid className="aboutMePage">
                 <Row>
                     <Col className="aboutMeBeginningLeft" xs="2" sm="2" md="2" lg ="2" xl="2">
-                        <p 
+                        <p
                             onClick={() => {showWhichElement("overview")}}
                         >Overview</p>
                         <p 
                             onClick={() => {showWhichElement("biography")}}
                         >Biography</p>
-                        <p>Goals and Aspirations</p>
+                        <p>Goals</p>
                     </Col>
                     {   showElement === "overview" &&
                             <Overview />
