@@ -36,5 +36,23 @@
 
 .aboutMeBeginningLeft p {
   font-size: 25px;
+  cursor: pointer;
+}
+
+.overviewElements{
+  opacity: 0;
+  border-left: 3px solid  #923cb5;
+	animation: fadeInOverview 1s ease-in both;
+}
+
+@keyframes fadeInOverview {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -80%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
 }
 
