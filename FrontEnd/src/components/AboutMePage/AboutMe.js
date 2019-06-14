@@ -12,7 +12,7 @@ import {
 
 function AboutMe(props){
 
-    const[showElement, setElement] = useState("")
+    const[showElement, setElement] = useState("biography")
 
     function showWhichElement(element){
         setElement(element);
@@ -23,14 +23,13 @@ function AboutMe(props){
             <NavBar pageName={"About Me"} classDefinition={"navbar-test"} />
             <Container fluid className="aboutMePage">
                 <Row>
-                    <Col className="aboutMeBeginningLeft" xs="2" sm="2" md="2" lg ="2" xl="2">
+                    <Col className="aboutMeBeginningLeft" xs="2" sm="2" md="2" lg ="2" xl="1">
                         <p
                             onClick={() => {showWhichElement("overview")}}
                         >Overview</p>
                         <p 
                             onClick={() => {showWhichElement("biography")}}
-                        >Biography</p>
-                        <p>Goals</p>
+                        >About</p>
                     </Col>
                     {   showElement === "overview" &&
                             <Overview />
