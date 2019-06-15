@@ -59,6 +59,8 @@
 
 .aboutMeBiography img {
   opacity: 0;
+  width: 90%;
+  height: 50%;
   border-radius: 50%;
   border: 2px solid; 
   border-color: #9253cb;
@@ -69,7 +71,12 @@
   opacity: 0;
   font-size: 25px;
   color: white;
+  border-left: 3px solid  #9253cb;
   animation: fadeInOverviewRight 1s ease-out both;
+}
+
+.aboutMeBiography p {
+  padding-left: 10px;
 }
 
 @keyframes fadeInOverview {
@@ -98,11 +105,39 @@
   .aboutMeBeginningLeft p {
     font-size: 20px;
   }
+
+  .aboutMeBiographyImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeBiography img {
+    width: 50%;
+    height: 70%;
+  }
+
+  .aboutMeBiography p{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .aboutMeBeginningLeft p {
     font-size: 18px;
+  }
+
+  .aboutMeBiographyImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeBiography img {
+    width: 80%;
+    height: 70%;
+  }
+
+  .aboutMeBiography p{
+    font-size: 15px;
   }
 }
 
@@ -110,13 +145,77 @@
   .aboutMeBeginningLeft p {
     font-size: 15px;
   }
+  .aboutMeBiography{
+    margin-top: 10vh;
+  }
+  .aboutMeBiographyDescriptionContainer{
+    margin-top: -5vh;
+  }
+  .aboutMeBiographyImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutMeBiography img {
+    width: 50%;
+    height: 75%;
+  }
+  .aboutMeBiography p{
+    font-size: 13px;
+  }
 
+}
+
+@media screen and (max-width: 568px) {
+  .aboutMeBeginningLeft p {
+    font-size: 15px;
+  }
+  .aboutMeBiography{
+    margin-top: 13vh;
+  }
+  .aboutMeBiographyDescriptionContainer{
+    margin-top: -5vh;
+  }
+  .aboutMeBiographyImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutMeBiography img {
+    width: 50%;
+    height: 75%;
+  }
+  .aboutMeBiography p{
+    font-size: 11px;
+  }
+  .aboutMeBiographyDescriptionContainer i {
+    margin-right: 19px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .aboutMeBeginningLeft p {
     font-size: 12px;
   }
+  .aboutMeBiography{
+    margin-top: 10vh;
+  }
+  .aboutMeBiographyDescriptionContainer{
+    margin-top: -5vh;
+  }
+  .aboutMeBiographyImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .aboutMeBiography img {
+    width: 50%;
+    height: 70%;
+  }
+  .aboutMeBiography p{
+    font-size: 11px;
+  }
+  .aboutMeBiographyDescriptionContainer i {
+    margin-right: 10px;
+  }
 }
+
 
 
