@@ -3,6 +3,7 @@ import React from 'react';
 // import './App.css';
 import Home from './components/HomePage/Home'
 import AboutMe from './components/AboutMePage/AboutMe'
+import Projects from './components/ProjectsPage/Projects'
 import {Switch, Route} from 'react-router-dom'
 
 
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path ="/" component = {Home} />
         <Route path = "/aboutme" component = {AboutMe} />
+        <Route path = "/projectspage" component = {Projects} />
       </Switch>
     </div>
   );

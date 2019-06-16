@@ -1,0 +1,29 @@
+.navbar-test {
+    background-color:#1C0034;
+
+}
+.projectsPage{
+    height: 100vh;
+    background-color: black;
+}
+
+.aboutMeBeginningLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25vh;
+    height: 15vh;
+    background-color:#9253cb;
+    color: white;
+}
+
+.projectsBeginningLeft p {
+    border-left: 3px solid  black;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.projectsBeginningLeft p {
+    padding-left: 10px;
+}
