@@ -18,16 +18,23 @@ function Projects(props){
 
     return (
         <div>
-            <NavBar pageName={"Projects"} classDefinition={"navbar-test"} />
+            <NavBar pageName={"Projects"} classDefinition={"navbar-project"} />
             <Container fluid className="projectsPage">
-                <Row>
-                    <Col className="projectsBeginningLeft" xs="3" sm="2" md="2" lg ="2" xl="1">
+                <Row className="projectsBeginningLeftContainer">
+                    <Col className="projectsBeginningValues" style={{borderLeft: "3px solid #9253cb"}} xs="3" sm="2" md="2" lg ="2" xl="1">
                         <p
                             onClick={() => {showWhichElement("overview")}}
                         >Overview</p>
-                        <p 
-                            onClick={() => {showWhichElement("biography")}}
-                        >About</p>
+                    </Col>
+                    <Col className="projectsBeginningValues" xs="3" sm="2" md="2" lg ="2" xl="1">
+                        <p
+                            onClick={() => {showWhichElement("overview")}}
+                        >Overview</p>
+                    </Col>
+                    <Col className="projectsBeginningValues" style={{borderRight: "3px solid #9253cb"}} xs="3" sm="2" md="2" lg ="2" xl="1">
+                        <p
+                            onClick={() => {showWhichElement("overview")}}
+                        >Overview</p>
                     </Col>
                 </Row>
             </Container>

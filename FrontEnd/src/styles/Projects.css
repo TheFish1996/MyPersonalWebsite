@@ -1,29 +1,34 @@
-.navbar-test {
-    background-color:#1C0034;
+.navbar-project {
+    background-color:black;
 
 }
 .projectsPage{
     height: 100vh;
-    background-color: black;
+    background-color: #1C0034;
 }
 
-.aboutMeBeginningLeft{
+.projectsBeginningLeftContainer{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-top: 25vh;
-    height: 15vh;
-    background-color:#9253cb;
-    color: white;
 }
 
-.projectsBeginningLeft p {
-    border-left: 3px solid  black;
+.projectsBeginningValues{
+    display: flex;
+    justify-content: center;
+    margin-top: 9vh;
+    padding-top: 1vh;
+    background-color:black;
+    color: white;
+    border-bottom: 3px solid  #9253cb;
+}
+
+.projectsBeginningValues p {
+    border-left: 3px solid  #9253cb;
     font-size: 20px;
     cursor: pointer;
 
 }
 
-.projectsBeginningLeft p {
+.projectsBeginningValues p {
     padding-left: 10px;
 }
