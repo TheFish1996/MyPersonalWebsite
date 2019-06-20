@@ -5,37 +5,49 @@ import {
     Fade, 
     Container, 
     Row, 
-    Col, 
+    Col,
+    Collapse,
+    Card,
+    CardBody,
+    CardText,
+    Button
   } from 'reactstrap'
 
 function Projects(props){
 
     const[showElement, setElement] = useState("biography")
+    const[collapse, setCollapse] = useState(false)
 
     function showWhichElement(element){
         setElement(element);
     }
 
+    function toggle(){
+        setCollapse(!collapse)
+    }
+
     return (
         <div>
             <NavBar pageName={"Projects"} classDefinition={"navbar-project"} />
+            <div className="projectsPageDropdown">
+                <Collapse style={{marginLeft: "auto", marginRight: "auto", borderLeft: '3px solid  #9253cb', borderRight: "3px solid  #9253cb"}} isOpen={collapse}>
+                    <Card style={{backgroundColor:"black"}}>
+                        <CardBody style={{color: "white", fontSize: "20px"}}>
+                            <CardText>Project Selection</CardText>
+                            <CardText>Project Selection</CardText>
+                            <CardText>Project Selection</CardText>
+                            <CardText>Project Selection</CardText>
+                        </CardBody>
+                    </Card>
+                </Collapse>
+                <Button onClick={toggle} style={{backgroundColor: "black"}} className="projectsPageDropdownButton">Project Selection</Button>
+            </div>
             <Container fluid className="projectsPage">
-                <Row className="projectsBeginningLeftContainer">
-                    <Col className="projectsBeginningValues" style={{borderLeft: "3px solid #9253cb"}} xs="3" sm="2" md="2" lg ="2" xl="1">
-                        <p
-                            onClick={() => {showWhichElement("overview")}}
-                        >Overview</p>
-                    </Col>
-                    <Col className="projectsBeginningValues" xs="3" sm="2" md="2" lg ="2" xl="1">
-                        <p
-                            onClick={() => {showWhichElement("overview")}}
-                        >Overview</p>
-                    </Col>
-                    <Col className="projectsBeginningValues" style={{borderRight: "3px solid #9253cb"}} xs="3" sm="2" md="2" lg ="2" xl="1">
-                        <p
-                            onClick={() => {showWhichElement("overview")}}
-                        >Overview</p>
-                    </Col>
+                <Row style={{paddingTop: "50px"}}>
+                    <p>Testing</p>
+                </Row>
+                <Row>
+                    <p>Testing</p>
                 </Row>
             </Container>
         </div>

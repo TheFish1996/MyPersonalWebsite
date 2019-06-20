@@ -2,14 +2,52 @@
     background-color:black;
 
 }
+
 .projectsPage{
     height: 100vh;
+    margin-top: 9vh;
+    z-index: 1;
     background-color: #1C0034;
+}
+
+.projectsPageDropdown{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+}
+
+.projectsPageDropdownButton{
+     margin-bottom: 1rem;
+     margin-left: auto; 
+     margin-right: auto;
+     font-size: 20px;
+     border-top-color: black;
+     border-left: 3px solid  #9253cb;
+     border-bottom: 3px solid  #9253cb;
+     border-right: 3px solid  #9253cb;
+     box-shadow: none;
+}
+
+.projectsPageDropdownButton:hover {
+    border-top-color: black;
+    border-left: 3px solid  #9253cb;
+    border-bottom: 3px solid  #9253cb;
+    border-right: 3px solid  #9253cb;
+    box-shadow: none;
+}
+
+.projectsPageDropdownButton:focus{
+    box-shadow: none;
 }
 
 .projectsBeginningLeftContainer{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    padding-top: 10vh;
 }
 
 .projectsBeginningValues{
