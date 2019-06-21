@@ -1,5 +1,5 @@
 .navbar-project {
-    background-color:black;
+    background-color:#1d1350
 
 }
 
@@ -7,7 +7,7 @@
     height: 100vh;
     margin-top: 9vh;
     z-index: 1;
-    background-color: #1C0034;
+    background-color: black;
 }
 
 .projectsPageDropdown{
@@ -45,23 +45,11 @@
     padding-top: 10vh;
 }
 
-.projectsBeginningValues{
-    display: flex;
-    justify-content: center;
-    margin-top: 9vh;
-    padding-top: 1vh;
-    background-color:black;
-    color: white;
-    border-bottom: 3px solid  #9253cb;
-}
-
-.projectsBeginningValues p {
-    border-left: 3px solid  #9253cb;
-    font-size: 20px;
-    cursor: pointer;
-
-}
-
-.projectsBeginningValues p {
-    padding-left: 10px;
+.projectsPageDescription{
+    margin-top: 15vh;
+    height: 50vh;
+    background-size: cover;
+    overflow-y:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
