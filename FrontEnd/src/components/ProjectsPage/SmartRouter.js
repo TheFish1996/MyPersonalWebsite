@@ -46,15 +46,30 @@ import {
                     }
                 </Row>
                 <Row className="projectsPageSmartRouterControllers">
-                    <img onClick={() => {setViewingItem(1)}} className={viewingElement === 1 && "projectsPageSmartRouterImage"} src={smartRouter1Small}  alt="Smart Router Small Image 1"></img>
-                    <img onClick={() => {setViewingItem(2)}} className={viewingElement === 2 && "projectsPageSmartRouterImage"} src={smartRouter2Small}  alt="Smart Router Small Image 1"></img> 
-                    <img onClick={() => {setViewingItem(3)}} className={viewingElement === 3 && "projectsPageSmartRouterImage"} src={smartRouter3Small}  alt="Smart Router Small Image 1"></img> 
-                    <img onClick={() => {setViewingItem(4)}} className={viewingElement === 4 && "projectsPageSmartRouterImage"} src={smartRouter4Small}  alt="Smart Router Small Image 1"></img> 
-                    <img onClick={() => {setViewingItem(5)}} className={viewingElement === 5 && "projectsPageSmartRouterImage"} src={smartRouterVideoSmall}  alt="Smart Router Small Image 1"></img>        
+                    <img onClick={() => {setViewingItem(1)}} className={viewingElement === 1 ? "projectsPageSmallImageActive" : "projectsPageSmallImageInactive" } src={smartRouter1Small}  alt="Smart Router Small Image 1"></img>
+                    <img onClick={() => {setViewingItem(2)}} className={viewingElement === 2 ? "projectsPageSmallImageActive" : "projectsPageSmallImageInactive"} src={smartRouter2Small}  alt="Smart Router Small Image 1"></img> 
+                    <img onClick={() => {setViewingItem(3)}} className={viewingElement === 3 ? "projectsPageSmallImageActive" : "projectsPageSmallImageInactive"} src={smartRouter3Small}  alt="Smart Router Small Image 1"></img> 
+                    <img onClick={() => {setViewingItem(4)}} className={viewingElement === 4 ? "projectsPageSmallImageActive" : "projectsPageSmallImageInactive"} src={smartRouter4Small}  alt="Smart Router Small Image 1"></img> 
+                    <img onClick={() => {setViewingItem(5)}} className={viewingElement === 5 ? "projectsPageSmallImageActive" : "projectsPageSmallImageInactive"} src={smartRouterVideoSmall}  alt="Smart Router Small Image 1"></img>        
                 </Row>
             </Col>
             <Col xl="6" className="projectsPageSmartRouter">
-                <p>Testing</p>
+                <Row style={{color: "white"}}>
+                    <h1>Smart Router</h1>
+                </Row>
+                <Row style={{color: "white"}}>
+                    <h3>Description</h3>
+                </Row>
+                <Row style={{backgroundColor: "#471218", color: "white"}}>
+                    <p>There is a growing demand for router control and network diagnostics among the expanding devices connected to home networks, ranging from smartphones to gaming consoles, tablets and many more. 
+                    With all these devices connected, it can be difficult to get the most out of the device, especially when faced with situations like buffering, no internet access, or even loss of connection. 
+                    The typical user who has this problem would be anyone with a home router/network that they can’t monitor effectively. 
+                    My team of fellow classmates and I helped create the Smart Router app, which takes care of these issues by allowing users to see which device is utilizing the most bandwidth on the network and potentially choosing which device or application takes priority above the rest. 
+                    For this project I was responsible for building the actual app interface and working on backend golang scripting.</p>
+                </Row>
+                <Row style={{color: "white"}}>
+                    <h3>Technologies Used</h3>
+                </Row>
             </Col>
         </Row>
     )
