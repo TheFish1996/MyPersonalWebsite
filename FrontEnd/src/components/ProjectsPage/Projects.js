@@ -38,10 +38,10 @@ function Projects(props){
                 <Collapse style={{marginLeft: "auto", marginRight: "auto", width: "200px"}} isOpen={collapse}>
                     <Card style={{backgroundColor: "#0b0f32"}}>
                         <CardBody style={{color: "white", fontSize: "20px", textAlign: "center"}}>
-                            <CardText onClick={() => {showWhichElement(1)}}>Smart Router</CardText>
-                            <CardText>Project Selection</CardText>
-                            <CardText>Project Selection</CardText>
-                            <CardText>Project Selection</CardText>
+                            <CardText style={{borderLeft: "3px solid #471218"}} onClick={() => {showWhichElement(1)}}>Smart Router</CardText>
+                            <CardText style={{borderLeft: "3px solid #471218"}} >Webify</CardText>
+                            <CardText style={{borderLeft: "3px solid #471218"}} >Project Selection</CardText>
+                            <CardText style={{borderLeft: "3px solid #471218"}} >Project Selection</CardText>
                         </CardBody>
                     </Card>
                 </Collapse>
