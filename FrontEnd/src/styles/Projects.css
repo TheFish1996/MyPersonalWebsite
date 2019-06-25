@@ -77,3 +77,23 @@
     border: 2.5px solid #0b0f32;
     border-radius: 5px;
 }
+
+.projectsPageSmartRouter p{
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.projectsPageDescription{
+    animation: fadeInProjectPageDescription 1.5s ease;
+}
+
+@keyframes fadeInProjectPageDescription {
+	from {
+		opacity: 0;
+		transform: translate3d(+80%, 0, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
