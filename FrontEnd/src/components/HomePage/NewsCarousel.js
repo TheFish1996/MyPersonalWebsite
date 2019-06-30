@@ -17,7 +17,6 @@ function NewsCarousel(props){
 
     const [activeIndex, setActiveIndex] = useState(0)
     const {newsData} = props
-    console.log(newsData)
     let animating;
 
     function onExiting() {

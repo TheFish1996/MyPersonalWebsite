@@ -10,12 +10,24 @@ import {
   Row, 
   Col, 
 } from 'reactstrap'
+import {Segment, Sticky, Rail} from 'semantic-ui-react'
 import {getAllNews} from '../../config/data'
 const pdf = require("../../img/Resume.pdf")
+const logo = require("../../img/Picture1.png")
 
 function Home(props){
 
   const [newsData, setNewsData] = useState([])
+  const [navRotate, setNavRotate] = useState(0)
+  const [linksShow, setLinksShow] = useState("navbarLinks")
+  let navRotateStyle = "navbarCollapse"
+  if(navRotate === 0){
+    navRotateStyle = "navbarCollapse"
+  } else if(navRotate === 1){
+    navRotateStyle = "navbarCollapseRotate"
+  } else {
+    navRotateStyle = "navbarCollapseRotateBack"
+  }
 
    useEffect(() => {
       const response = async () => {
@@ -25,12 +37,51 @@ function Home(props){
       response();
    }, [])
 
+    useEffect(() => {
+      window.addEventListener("scroll", test)
+      
+      return () => { //return is equivalent of writing a componentwillunmount
+        window.removeEventListener("scroll", test)
+      }
+    }, []) //array means it only triggers once
+
+    function test(e){
+      console.log(linksShow)
+      const scrollAmount  = e.srcElement.scrollTop
+      console.log(scrollAmount)
+      if(scrollAmount >= 80){
+        setLinksShow("navbarLinksHidden")
+      } else {
+        setLinksShow("navbarLinks")
+      }
+      
+    }
+
+    function iconAnimationForward(){
+      setNavRotate(1);
+    }
+    function iconAnimationBackward(){
+      setNavRotate(2)
+    }
+
   return (
     <div>
-      <NavBar pageName={"Home"} />
-      <Container fluid className="homePage">
+      <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className="homePage">
+        <Row className="sticky-top">
+          <Col className="navbarTitle sticky-top" style={{display: "flex", alignItems:"center"}} lg="7" xl="7">
+            <p><img style={{marginRight: "10px"}} height="65px" width="65px" src={logo}></img>Jonathan Fishkin</p>
+          </Col>
+          <Col className={linksShow} lg="4" xl="4">
+            <p>About Me</p>
+            <p>Projects</p>
+            <p>Job Experience</p>
+          </Col>
+          <Col onClick={iconAnimationForward} onMouseEnter={iconAnimationForward} onMouseLeave={iconAnimationBackward} className={navRotateStyle} style={{display: "flex", alignItems:"center", justifyContent:"center"}} lg="1" xl="1">
+            <i style={{fontSize: "1.5rem"}} className="fas fa-bars fa-lg"></i>
+          </Col>
+        </Row>
         <Row className="newsHomePage">
-          <Col xs="11" sm="8" md="7" lg="5" xl="4" className="newsHomePageCarousel">
+          <Col xs="11" sm="8" md="7" lg="3" xl="3" className="newsHomePageCarousel">
             <NewsCarousel newsData={newsData} />
           </Col>
         </Row>
@@ -52,6 +103,33 @@ function Home(props){
           <Col xs= "2" md="2" lg="2" xl="2">
             <a target="_blank" href={pdf}><i className="far fa-envelope"></i></a>
           </Col>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
         </Row>
       </Container>
     </div>

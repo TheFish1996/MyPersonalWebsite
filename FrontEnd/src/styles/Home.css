@@ -1,36 +1,139 @@
 html, body {
-  height: 100%;
-}
-html {
-  overflow-y: hidden;
-}
-body {
-  overflow-y: scroll;
+  min-height: 100%;
+  overflow: hidden;
 }
 
+body{
+  scrollbar-width: thin;
+}
+
+/*
 body{
   background: url('../img/dawn.jpg') no-repeat center center fixed;
   background-size: cover;
   overflow-y: hidden;
 }
+*/
 
-.video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.homePage{
+  background-color: #e7e7e7;
+  background-repeat: repeat;
+  padding-left: 40px;
   height: 100%;
-  z-index: -1;
+  overflow: auto;
+  position: absolute;
 }
 
 .navbarTitle {
-  font-size: 45px;
+  font-size: 28px;
+  letter-spacing: 2px;
   font-family: 'Dosis', sans-serif;
+  font-weight: bold;
 }
 
-.homePage{
-  margin-top: 10vh;
+.navbarTitle p {
+  padding-top: 15px;
 }
+
+
+.navbarLinks {
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: showNavbarLinks 0.4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.navbarLinksHidden{
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: hideNavbarLinks 0.4s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.navbarLinksHidden p{
+  margin-right: 60px;
+  padding-top: 15px;
+}
+
+.navbarLinks p {
+  margin-right: 60px;
+  padding-top: 15px;
+}
+
+.navbarCollapse {
+  background-color: white;
+}
+
+.navbarCollapseRotate {
+  background-color: white;
+}
+
+.navbarCollapseRotate i {
+  animation: rotateForward ease 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.navbarCollapseRotateBack {
+  background-color: white;
+}
+
+.navbarCollapseRotateBack i {
+  animation: rotateBackward ease 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateForward{
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(90deg)
+	}
+}
+
+@keyframes rotateBackward{
+	from {
+		transform: rotate(90deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes hideNavbarLinks{
+  0%{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate3d(0, -80%, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes showNavbarLinks{
+  0%{
+    transform: translate3d(0, -80%, 0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.3;
+  }
+  100%{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 
 .animatedText{
   font-size: 40px;

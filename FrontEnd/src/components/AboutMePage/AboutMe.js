@@ -14,6 +14,18 @@ function AboutMe(props){
 
     const[showElement, setElement] = useState("biography")
 
+    useEffect(() => {
+        window.addEventListener("mousemove", test)
+        
+        return () => { //return is equivalent of writing a componentwillunmount
+          window.removeEventListener("mousemove", test)
+        }
+      }, []) //array means it only triggers once
+  
+      function test(e){
+        console.log(e)
+    }
+
     function showWhichElement(element){
         setElement(element);
     }

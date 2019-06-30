@@ -40,13 +40,13 @@ import {
                             </p>
                         </Row>
                         <Row>
-                            <i class="fab fa-html5" style={{fontSize: "6vw", color: "#C65A01"}}></i>
-                            <i class="fab fa-css3-alt" style={{fontSize: "6vw", color: "#01449E"}}></i>
-                            <i class="fab fa-node" style={{fontSize: "6vw", color: "#4CCD0B"}}></i>
-                            <i class="fab fa-react" style={{fontSize: "6vw", color: "#0666B7"}}></i>
-                            <i class="fab fa-java" style={{fontSize: "6vw", color: "#A60202"}}></i>
-                            <i class="fas fa-database" style={{fontSize: "6vw", color: "#979797"}}></i>
-                            <i class="fab fa-aws" style={{fontSize: "6vw", color: "#ff9900"}}></i>
+                            <i className="fab fa-html5" style={{fontSize: "6vw", color: "#C65A01"}}></i>
+                            <i className="fab fa-css3-alt" style={{fontSize: "6vw", color: "#01449E"}}></i>
+                            <i className="fab fa-node" style={{fontSize: "6vw", color: "#4CCD0B"}}></i>
+                            <i className="fab fa-react" style={{fontSize: "6vw", color: "#0666B7"}}></i>
+                            <i className="fab fa-java" style={{fontSize: "6vw", color: "#A60202"}}></i>
+                            <i className="fas fa-database" style={{fontSize: "6vw", color: "#979797"}}></i>
+                            <i className="fab fa-aws" style={{fontSize: "6vw", color: "#ff9900"}}></i>
                         </Row>
                     </Col>
                 </Row>
