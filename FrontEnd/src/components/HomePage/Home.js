@@ -24,9 +24,9 @@ function Home(props){
   if(navRotate === 0){
     navRotateStyle = "navbarCollapse"
   } else if(navRotate === 1){
-    navRotateStyle = "navbarCollapseRotate"
+    navRotateStyle = "navbarCollapse isActive"
   } else {
-    navRotateStyle = "navbarCollapseRotateBack"
+    navRotateStyle = "navbarCollapse isActive activeClick"
   }
 
    useEffect(() => {
@@ -36,14 +36,6 @@ function Home(props){
       }
       response();
    }, [])
-
-    useEffect(() => {
-      window.addEventListener("scroll", test)
-      
-      return () => { //return is equivalent of writing a componentwillunmount
-        window.removeEventListener("scroll", test)
-      }
-    }, []) //array means it only triggers once
 
     function test(e){
       console.log(linksShow)
@@ -61,7 +53,10 @@ function Home(props){
       setNavRotate(1);
     }
     function iconAnimationBackward(){
-      setNavRotate(2)
+      setNavRotate(0)
+    }
+    function iconFullAnimation(){
+      setNavRotate(2);
     }
 
   return (
@@ -76,8 +71,10 @@ function Home(props){
             <p>Projects</p>
             <p>Job Experience</p>
           </Col>
-          <Col onClick={iconAnimationForward} onMouseEnter={iconAnimationForward} onMouseLeave={iconAnimationBackward} className={navRotateStyle} style={{display: "flex", alignItems:"center", justifyContent:"center"}} lg="1" xl="1">
-            <i style={{fontSize: "1.5rem"}} className="fas fa-bars fa-lg"></i>
+          <Col className={navRotateStyle} onMouseEnter={iconAnimationForward} onMouseLeave={iconAnimationBackward} onClick={iconFullAnimation} lg="1" xl="1">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
           </Col>
         </Row>
         <Row className="newsHomePage">

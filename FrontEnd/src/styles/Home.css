@@ -68,43 +68,86 @@ body{
 
 .navbarCollapse {
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, white 50%, #D2F4FF 50%);
+  transition: background-position 0.3s;
+  
 }
 
-.navbarCollapseRotate {
-  background-color: white;
+.navbarCollapse:hover{
+  cursor: pointer;
+  background-position: 0 -100%;
 }
 
-.navbarCollapseRotate i {
-  animation: rotateForward ease 0.2s;
-  animation-fill-mode: forwards;
+.navbarCollapse .line {
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.3s ease-in-out;
 }
 
-.navbarCollapseRotateBack {
-  background-color: white;
+
+.isActive{
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  /*
+    Remmoving the block of code below removes the             secondary animation
+  -webkit-transform: rotate(45deg); 
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  */
 }
 
-.navbarCollapseRotateBack i {
-  animation: rotateBackward ease 0.2s;
-  animation-fill-mode: forwards;
+.isActive .line:nth-child(2){
+  width: 0px;
 }
 
-@keyframes rotateForward{
-	from {
-		transform: rotate(0deg)
-	}
-	to {
-		transform: rotate(90deg)
-	}
+.isActive .line:nth-child(1),
+.isActive .line:nth-child(3){
+  -webkit-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
-@keyframes rotateBackward{
-	from {
-		transform: rotate(90deg);
-	}
-	to {
-		transform: rotate(0deg);
-	}
+.isActive .line:nth-child(1){
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
 }
+
+.isActive .line:nth-child(3){
+  -webkit-transform: translateY(-5px) rotate(90deg);
+  -ms-transform: translateY(-5px) rotate(90deg);
+  -o-transform: translateY(-5px) rotate(90deg);
+  transform: translateY(-5px) rotate(90deg);
+}
+
+.activeClick .line:nth-child(1){
+  -webkit-transform: translateY(5px) rotate(45deg);
+  -ms-transform: translateY(5px) rotate(45deg);
+  -o-transform: translateY(5px) rotate(45deg);
+  transform: translateY(5px) rotate(45deg);
+
+}
+
+.activeClick .line:nth-child(3){
+  -webkit-transform: translateY(-10px) rotate(135deg);
+  -ms-transform: translateY(-10px) rotate(135deg);
+  -o-transform: translateY(-10px) rotate(135deg);
+  transform: translateY(-10px) rotate(135deg);
+}
+
+
 
 @keyframes hideNavbarLinks{
   0%{
