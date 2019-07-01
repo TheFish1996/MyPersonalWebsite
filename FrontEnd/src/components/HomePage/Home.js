@@ -13,21 +13,11 @@ import {
 import {Segment, Sticky, Rail} from 'semantic-ui-react'
 import {getAllNews} from '../../config/data'
 const pdf = require("../../img/Resume.pdf")
-const logo = require("../../img/Picture1.png")
 
 function Home(props){
 
   const [newsData, setNewsData] = useState([])
-  const [navRotate, setNavRotate] = useState(0)
   const [linksShow, setLinksShow] = useState("navbarLinks")
-  let navRotateStyle = "navbarCollapse"
-  if(navRotate === 0){
-    navRotateStyle = "navbarCollapse"
-  } else if(navRotate === 1){
-    navRotateStyle = "navbarCollapse isActive"
-  } else {
-    navRotateStyle = "navbarCollapse isActive activeClick"
-  }
 
    useEffect(() => {
       const response = async () => {
@@ -38,45 +28,19 @@ function Home(props){
    }, [])
 
     function test(e){
-      console.log(linksShow)
       const scrollAmount  = e.srcElement.scrollTop
-      console.log(scrollAmount)
+      console.log(linksShow)
       if(scrollAmount >= 80){
         setLinksShow("navbarLinksHidden")
-      } else {
+      } else if(scrollAmount <=80) {
         setLinksShow("navbarLinks")
-      }
-      
-    }
-
-    function iconAnimationForward(){
-      setNavRotate(1);
-    }
-    function iconAnimationBackward(){
-      setNavRotate(0)
-    }
-    function iconFullAnimation(){
-      setNavRotate(2);
+      } 
     }
 
   return (
     <div>
       <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className="homePage">
-        <Row className="sticky-top">
-          <Col className="navbarTitle sticky-top" style={{display: "flex", alignItems:"center"}} lg="7" xl="7">
-            <p><img style={{marginRight: "10px"}} height="65px" width="65px" src={logo}></img>Jonathan Fishkin</p>
-          </Col>
-          <Col className={linksShow} lg="4" xl="4">
-            <p>About Me</p>
-            <p>Projects</p>
-            <p>Job Experience</p>
-          </Col>
-          <Col className={navRotateStyle} onMouseEnter={iconAnimationForward} onMouseLeave={iconAnimationBackward} onClick={iconFullAnimation} lg="1" xl="1">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </Col>
-        </Row>
+        <NavBar linksShow={linksShow} />
         <Row className="newsHomePage">
           <Col xs="11" sm="8" md="7" lg="3" xl="3" className="newsHomePageCarousel">
             <NewsCarousel newsData={newsData} />
