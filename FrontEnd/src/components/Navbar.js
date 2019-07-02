@@ -11,7 +11,11 @@ const logo = require("../img/Picture1.png")
   function NavBar(props){
 
     const [navRotate, setNavRotate] = useState(0)
+    const [rectangleAnimation1, setRectangleAnimation1] = useState("shape");
+    const [rectangleAnimation2, setRectangleAnimation2] = useState("shape");
+    const [rectangleAnimation3, setRectangleAnimation3] = useState("shape");
     const {linksShow} = props
+
     let navRotateStyle = "navbarCollapse"
     if(navRotate === 0){
       navRotateStyle = "navbarCollapse"
@@ -30,6 +34,24 @@ const logo = require("../img/Picture1.png")
     function iconFullAnimation(){
       setNavRotate(2);
     }
+    function setNavAnimation(value){
+      if(value === 1){
+        setRectangleAnimation1("shape shapeAnimation")
+      } else if(value === 2){
+        setRectangleAnimation2("shape shapeAnimation")
+      } else if(value === 3){
+        setRectangleAnimation3("shape shapeAnimation")
+      }
+    }
+    function setNavAnimationBack(value){
+      if(value === 1){
+        setRectangleAnimation1("shape")
+      } else if(value === 2){
+        setRectangleAnimation2("shape")
+      } else if(value === 3){
+        setRectangleAnimation3("shape")
+      }
+    }
 
       return (
         <Row className="sticky-top">
@@ -38,21 +60,21 @@ const logo = require("../img/Picture1.png")
           </Col>
           <Col className={linksShow} lg="4" xl="4">
             <div className="svg-wrap">
-              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
-                <text x="35" y="30">About Me</text>
-                <rect class="shape" height="50" width="130" />
+              <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
+                <text x="20" y="30">About Me</text>
+                <rect className={rectangleAnimation1} onMouseEnter={() => {setNavAnimation(1)}} onMouseLeave={() => {setNavAnimationBack(1)}} onClick={() => {setNavAnimation(1)}} height="50" width="110" />
               </svg>
             </div>
             <div className="svg-wrap">
-              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
-                <text x="35" y="30">Projects</text>
-                <rect class="shape" height="50" width="130" />
+              <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
+                <text x="25" y="30">Projects</text>
+                <rect className={rectangleAnimation2} onMouseEnter={() => {setNavAnimation(2)}} onMouseLeave={() => {setNavAnimationBack(2)}} onClick={() => {setNavAnimation(2)}} height="50" width="110" />
               </svg>
             </div>
             <div className="svg-wrap">
-              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
-                <text x="35" y="30">Experience</text>
-                <rect class="shape" height="50" width="130" />
+              <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
+                <text x="20" y="30">Experience</text>
+                <rect className={rectangleAnimation3} onMouseEnter={() => {setNavAnimation(3)}} onMouseLeave={() => {setNavAnimationBack(3)}} onClick={() => {setNavAnimation(3)}} height="50" width="110" />
               </svg>
             </div>
           </Col>

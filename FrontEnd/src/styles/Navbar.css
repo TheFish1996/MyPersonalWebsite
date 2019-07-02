@@ -47,8 +47,8 @@
 }
 
 .shape {
-    stroke-dasharray: 100 500;
-    stroke-dashoffset: -350;
+    stroke-dasharray: 100 400;
+    stroke-dashoffset: -310;
     stroke-width: 3px;
     fill: transparent;
     stroke: black;
@@ -56,11 +56,14 @@
     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
   }
 
-  .shape:hover {
+  .shape:hover{
+      cursor: pointer;
+  }
+
+  .shapeAnimation {
     stroke-width: 2px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
-    cursor: pointer;
   }
 
 .navbarCollapse {
