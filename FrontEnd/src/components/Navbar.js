@@ -1,3 +1,4 @@
+import '../styles/Navbar.css';
 import React, {useState, useEffect} from "react";
 import {
     Row,
@@ -36,9 +37,24 @@ const logo = require("../img/Picture1.png")
             <p><img style={{marginRight: "10px"}} height="65px" width="65px" src={logo}></img>Jonathan Fishkin</p>
           </Col>
           <Col className={linksShow} lg="4" xl="4">
-            <p>About Me</p>
-            <p>Projects</p>
-            <p>Job Experience</p>
+            <div className="svg-wrap">
+              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
+                <text x="35" y="30">About Me</text>
+                <rect class="shape" height="50" width="130" />
+              </svg>
+            </div>
+            <div className="svg-wrap">
+              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
+                <text x="35" y="30">Projects</text>
+                <rect class="shape" height="50" width="130" />
+              </svg>
+            </div>
+            <div className="svg-wrap">
+              <svg height="50" width="150" xmlns="http://www.w3.org/2000/svg">
+                <text x="35" y="30">Experience</text>
+                <rect class="shape" height="50" width="130" />
+              </svg>
+            </div>
           </Col>
           <Col className={navRotateStyle} onMouseEnter={iconAnimationForward} onMouseLeave={iconAnimationBackward} onClick={iconFullAnimation} lg="1" xl="1">
             <span className="line"></span>

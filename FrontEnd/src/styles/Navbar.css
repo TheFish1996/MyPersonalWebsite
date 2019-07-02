@@ -1,0 +1,176 @@
+.navbarTitle {
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
+}
+
+.navbarTitle p {
+    margin-top: 15px;
+}
+
+
+.navbarLinks {
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: showNavbarLinks 0.4s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.navbarLinksHidden{
+    font-size: 18px;
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: hideNavbarLinks 0.4s ease-in;
+    animation-fill-mode: forwards;
+}
+
+.navbarLinksHidden p{
+    margin-right: 60px;
+    margin-top: 15px;
+
+}
+
+.navbarLinks p {
+    margin-right: 60px;
+    margin-top: 15px;
+
+}
+
+.svg-wrap{
+  position: relative;
+}
+
+.shape {
+    stroke-dasharray: 100 500;
+    stroke-dashoffset: -350;
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: black;
+    border-bottom: 5px solid black;
+    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  }
+
+  .shape:hover {
+    stroke-width: 2px;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 760;
+    cursor: pointer;
+  }
+
+.navbarCollapse {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, white 50%, #D2F4FF 50%);
+    transition: background-position 0.3s;
+
+}
+
+.navbarCollapse:hover{
+    cursor: pointer;
+    background-position: 0 -100%;
+}
+
+.navbarCollapse .line {
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-bottom: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.isActive{
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+/*
+    Remmoving the block of code below removes the             secondary animation
+-webkit-transform: rotate(45deg); 
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+*/
+}
+
+.isActive .line:nth-child(2){
+    width: 0px;
+}
+
+.isActive .line:nth-child(1),
+.isActive .line:nth-child(3){
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.isActive .line:nth-child(1){
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.isActive .line:nth-child(3){
+    -webkit-transform: translateY(-5px) rotate(90deg);
+    -ms-transform: translateY(-5px) rotate(90deg);
+    -o-transform: translateY(-5px) rotate(90deg);
+    transform: translateY(-5px) rotate(90deg);
+}
+
+.activeClick .line:nth-child(1){
+    -webkit-transform: translateY(5px) rotate(45deg);
+    -ms-transform: translateY(5px) rotate(45deg);
+    -o-transform: translateY(5px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+
+}
+
+.activeClick .line:nth-child(3){
+    -webkit-transform: translateY(-10px) rotate(135deg);
+    -ms-transform: translateY(-10px) rotate(135deg);
+    -o-transform: translateY(-10px) rotate(135deg);
+    transform: translateY(-10px) rotate(135deg);
+}
+
+
+
+@keyframes hideNavbarLinks{
+    0%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, -80%, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes showNavbarLinks{
+    0%{
+        transform: translate3d(0, -80%, 0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+

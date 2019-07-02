@@ -10,7 +10,6 @@ import {
   Row, 
   Col, 
 } from 'reactstrap'
-import {Segment, Sticky, Rail} from 'semantic-ui-react'
 import {getAllNews} from '../../config/data'
 const pdf = require("../../img/Resume.pdf")
 
@@ -29,7 +28,6 @@ function Home(props){
 
     function test(e){
       const scrollAmount  = e.srcElement.scrollTop
-      console.log(linksShow)
       if(scrollAmount >= 80){
         setLinksShow("navbarLinksHidden")
       } else if(scrollAmount <=80) {
