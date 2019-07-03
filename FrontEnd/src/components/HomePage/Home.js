@@ -16,7 +16,7 @@ const pdf = require("../../img/Resume.pdf")
 function Home(props){
 
   const [newsData, setNewsData] = useState([])
-  const [linksShow, setLinksShow] = useState("navbarLinks")
+  const [linksShow, setLinksShow] = useState("navbarLinks noAnimation")
 
    useEffect(() => {
       const response = async () => {

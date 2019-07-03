@@ -3,11 +3,63 @@
     letter-spacing: 2px;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
+    
 }
 
 .navbarTitle p {
     margin-top: 15px;
 }
+
+.titleIconExpand{
+    -webkit-animation: titleIconExpand 0.4s ease-in;
+            animation: titleIconExpand 0.4s ease-in;
+            animation-fill-mode: forwards;
+}
+
+.titleIconContract{
+    -webkit-animation: titleIconContract 0.4s ease-in;
+            animation: titleIconContract 0.4s ease-in;
+            animation-fill-mode: forwards;
+}
+
+.titleContractOut {
+	-webkit-animation: titleContractOut 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: titleContractOut 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation-fill-mode: forwards;
+}
+
+.titleContractIn {
+	-webkit-animation: titleContractIn 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: titleContractIn 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation-fill-mode: forwards;
+}
+
+
+/* Animation for 
+.navbarTitle i {
+    background: url("../img/water.png"); 
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animate 15s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left 0px top 150px; 
+    }
+    40%{
+        background-position: left 800px top -10px;
+    }
+    80%{
+        background-position: left 1600px top -10px;
+    }
+    100%{
+        background-position: left 2400px top 150px;
+    }
+}
+*/
 
 
 .navbarLinks {
@@ -18,6 +70,11 @@
     align-items: center;
     animation: showNavbarLinks 0.4s ease-out;
     animation-fill-mode: forwards;
+}
+
+.navbarLinks p {
+    margin-right: 60px;
+    margin-top: 15px;
 }
 
 .navbarLinksHidden{
@@ -36,11 +93,6 @@
 
 }
 
-.navbarLinks p {
-    margin-right: 60px;
-    margin-top: 15px;
-
-}
 
 .svg-wrap{
   position: relative;
@@ -176,4 +228,63 @@ transform: rotate(45deg);
         opacity: 1;
     }
 }
+
+@-webkit-keyframes titleContractOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        letter-spacing: -0.4em;
+        opacity: 0;
+    }
+}
+@keyframes titleContractOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        letter-spacing: -0.4em;
+        opacity: 0;
+    }
+}
+
+@keyframes titleContractIn {
+    0% {
+        opacity: 0;
+        letter-spacing: -0.4em;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        letter-spacing: 2px;
+        opacity: 1;
+    }
+}
+
+@keyframes titleIconExpand {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes titleIconContract {
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+  
 

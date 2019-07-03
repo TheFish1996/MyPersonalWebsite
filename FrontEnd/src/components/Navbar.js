@@ -16,13 +16,28 @@ const logo = require("../img/Picture1.png")
     const [rectangleAnimation3, setRectangleAnimation3] = useState("shape");
     const {linksShow} = props
 
+    let iconTitle = "fas fa-water fa-md titleIconContract noAnimation"
+    let nameTitle = "titleContractIn noAnimation"
     let navRotateStyle = "navbarCollapse"
+
     if(navRotate === 0){
       navRotateStyle = "navbarCollapse"
     } else if(navRotate === 1){
       navRotateStyle = "navbarCollapse isActive"
     } else {
       navRotateStyle = "navbarCollapse isActive activeClick"
+    }
+
+    if(linksShow === "navbarLinksHidden"){
+      iconTitle = "fas fa-water fa-md titleIconExpand"
+    } else if(linksShow === "navbarLinks"){
+      iconTitle = "fas fa-water fa-md titleIconContract"
+    }
+
+    if(linksShow === "navbarLinksHidden"){
+      nameTitle = "titleContractOut"
+    } else if(linksShow === "navbarLinks"){
+      nameTitle = "titleContractIn"
     }
 
     function iconAnimationForward(){
@@ -54,9 +69,11 @@ const logo = require("../img/Picture1.png")
     }
 
       return (
-        <Row className="sticky-top">
+        <Row className="sticky-top noAnimation">
           <Col className="navbarTitle sticky-top" style={{display: "flex", alignItems:"center"}} lg="7" xl="7">
-            <p><img style={{marginRight: "10px"}} height="65px" width="65px" src={logo}></img>Jonathan Fishkin</p>
+            <i style={{color: "black", marginRight: "10px"}} className={iconTitle}></i>
+            <p style={{marginRight: "5px "}} className={nameTitle}>Jonathan</p>
+            <p className={nameTitle}>Fishkin</p>
           </Col>
           <Col className={linksShow} lg="4" xl="4">
             <div className="svg-wrap">

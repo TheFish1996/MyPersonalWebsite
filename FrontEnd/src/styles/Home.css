@@ -7,6 +7,10 @@ body{
   scrollbar-width: thin;
 }
 
+.noAnimation{
+  animation-duration: 0s !important;
+}
+
 /*
 body{
   background: url('../img/dawn.jpg') no-repeat center center fixed;
