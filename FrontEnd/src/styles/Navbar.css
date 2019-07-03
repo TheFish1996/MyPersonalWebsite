@@ -1,8 +1,10 @@
 .navbarTitle {
-    font-size: 28px;
+    font-size: 30px;
     letter-spacing: 2px;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
+    margin-top: 15px;
+
     
 }
 
@@ -70,6 +72,7 @@
     align-items: center;
     animation: showNavbarLinks 0.4s ease-out;
     animation-fill-mode: forwards;
+    margin-top: 15px;
 }
 
 .navbarLinks p {
@@ -127,6 +130,7 @@
     background-size: 100% 200%;
     background-image: linear-gradient(to bottom, white 50%, #D2F4FF 50%);
     transition: background-position 0.3s;
+    margin-bottom: -15px;
 
 }
 
@@ -273,13 +277,13 @@ transform: rotate(45deg);
         transform: scale(1);
     }
     100%{
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 }
 
 @keyframes titleIconContract {
     0%{
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
     100%{
         transform: scale(1);

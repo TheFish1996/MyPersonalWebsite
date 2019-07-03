@@ -10,7 +10,10 @@ const logo = require("../img/Picture1.png")
 
   function NavBar(props){
 
-    const [navRotate, setNavRotate] = useState(0)
+    const [navRotate, setNavRotate] = useState({
+      value: 0,
+      stayFixed: false
+    })
     const [rectangleAnimation1, setRectangleAnimation1] = useState("shape");
     const [rectangleAnimation2, setRectangleAnimation2] = useState("shape");
     const [rectangleAnimation3, setRectangleAnimation3] = useState("shape");
@@ -20,9 +23,9 @@ const logo = require("../img/Picture1.png")
     let nameTitle = "titleContractIn noAnimation"
     let navRotateStyle = "navbarCollapse"
 
-    if(navRotate === 0){
+    if(navRotate.value === 0 && navRotate.stayFixed === false){
       navRotateStyle = "navbarCollapse"
-    } else if(navRotate === 1){
+    } else if(navRotate.value === 1 && navRotate.stayFixed === false){
       navRotateStyle = "navbarCollapse isActive"
     } else {
       navRotateStyle = "navbarCollapse isActive activeClick"
@@ -41,14 +44,24 @@ const logo = require("../img/Picture1.png")
     }
 
     function iconAnimationForward(){
-      setNavRotate(1);
+      setNavRotate(state => ({
+        ...state,
+        value: 1,
+      }));
     }
     function iconAnimationBackward(){
-      setNavRotate(0)
+      setNavRotate(state => ({
+        ...state,
+        value: 0,
+      }));
     }
     function iconFullAnimation(){
-      setNavRotate(2);
+      setNavRotate(state => ({
+        value: 2,
+        stayFixed: !state.stayFixed
+      }));
     }
+
     function setNavAnimation(value){
       if(value === 1){
         setRectangleAnimation1("shape shapeAnimation")
@@ -58,6 +71,7 @@ const logo = require("../img/Picture1.png")
         setRectangleAnimation3("shape shapeAnimation")
       }
     }
+
     function setNavAnimationBack(value){
       if(value === 1){
         setRectangleAnimation1("shape")
