@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import AnimatedText from './AnimatedText'
 import NavBar from '../Navbar'
 import NewsCarousel from './NewsCarousel'
+import {connect} from 'react-redux'
 import {
   Fade, 
   Container, 
@@ -13,8 +14,15 @@ import {
 import {getAllNews} from '../../config/data'
 const pdf = require("../../img/Resume.pdf")
 
+const mapStateToProps = (state) => {
+  return {
+    showNavigationPage: state.showingNavigationElements.showNavBarPage
+  }
+}
+
 function Home(props){
 
+  const {showNavigationPage} = props
   const [newsData, setNewsData] = useState([])
   const [linksShow, setLinksShow] = useState("navbarLinks noAnimation")
 
@@ -25,6 +33,10 @@ function Home(props){
       }
       response();
    }, [])
+
+   useEffect(() => {
+     console.log(showNavigationPage)
+   }, [showNavigationPage])
 
     function test(e){
       const scrollAmount  = e.srcElement.scrollTop
@@ -75,24 +87,12 @@ function Home(props){
         <Row>
           <p>Placeholder</p>
         </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
       </Container>
     </div>
   )
 }
 
-export default Home;
+export default connect(
+  mapStateToProps,
+  null
+)(Home);

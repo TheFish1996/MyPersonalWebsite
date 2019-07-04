@@ -1,8 +1,8 @@
 import { combineReducers } from "redux"
-import userInformation from "./userInformation"
+import showingNavigationElements from "./showingNavigationElements"
 
 const rootReducer = combineReducers({
-    userInformation
+    showingNavigationElements
 })
 
 

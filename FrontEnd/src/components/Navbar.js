@@ -5,8 +5,16 @@ import {
     Col
   } from "reactstrap";
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {showNavigationPage} from '../actions/showingNavigationElement'
 
 const logo = require("../img/Picture1.png")
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    showNavigationPage: () => dispatch(showNavigationPage())
+  }
+}
 
   function NavBar(props){
 
@@ -14,10 +22,17 @@ const logo = require("../img/Picture1.png")
       value: 0,
       stayFixed: false
     })
+
     const [rectangleAnimation1, setRectangleAnimation1] = useState("shape");
     const [rectangleAnimation2, setRectangleAnimation2] = useState("shape");
     const [rectangleAnimation3, setRectangleAnimation3] = useState("shape");
-    const {linksShow} = props
+    const {linksShow, showNavigationPage} = props
+
+    useEffect(() => {
+      if(navRotate.stayFixed === true){
+        showNavigationPage();
+      }
+    }, [navRotate.stayFixed])
 
     let iconTitle = "fas fa-water fa-md titleIconContract noAnimation"
     let nameTitle = "titleContractIn noAnimation"
@@ -118,4 +133,7 @@ const logo = require("../img/Picture1.png")
       )
   }
 
-  export default NavBar;
+  export default connect(
+    null,
+    mapDispatchToProps
+  )(NavBar);

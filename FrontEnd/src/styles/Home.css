@@ -5,6 +5,7 @@ html, body {
 
 body{
   scrollbar-width: thin;
+  background-color: black;
 }
 
 .noAnimation{
@@ -26,8 +27,17 @@ body{
   height: 100%;
   overflow: auto;
   position: absolute;
+  animation-fill-mode: forwards;
 }
 
+.animate_content {
+  animation: animate 2s ease 0.5s;
+}
+
+.fadeOutHomePageElements {
+  animation: fadeOut 0.1s ease;
+  animation-fill-mode: forwards;
+}
 
 .animatedText{
   font-size: 40px;
@@ -218,4 +228,34 @@ body{
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: olivedrab }
+}
+
+@keyframes animate {
+  10% {
+    transform: scale(1, 0.002);
+  }
+  35% {
+    transform: scale(0.2, 0.002);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.2, 0.002);
+    opacity: 0;
+  }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes fadeOut {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
