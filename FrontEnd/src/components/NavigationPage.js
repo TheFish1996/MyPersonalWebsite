@@ -1,4 +1,4 @@
-import '../styles/NavigtationPage.css';
+import '../styles/NavigationPage.css';
 import React, {useState, useEffect} from "react";
 import {
     Row,
@@ -9,22 +9,18 @@ import {Link} from 'react-router-dom'
 
 function NavigationPage(props){
   return (
-    <div>
-      <Container fluid className="navigationPage">
-        <Row>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-            <h1>TESTING ITS ME</h1>
-        </Row>
-      </Container>
-    </div>
+      <Row>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+          <h1>TESTING ITS ME</h1>
+      </Row>
   )
 }
 

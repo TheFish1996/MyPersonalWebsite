@@ -5,7 +5,7 @@ html, body {
 
 body{
   scrollbar-width: thin;
-  background-color: black;
+  background-color: #282828;
 }
 
 .noAnimation{
@@ -20,6 +20,14 @@ body{
 }
 */
 
+.displayShow{
+  display: block;
+}
+
+.displayHide{
+  display: none;
+}
+
 .homePage{
   background-color: #e7e7e7;
   background-repeat: repeat;
@@ -30,12 +38,22 @@ body{
   animation-fill-mode: forwards;
 }
 
+.navigationPage{
+  background-color: black;
+  background-repeat: repeat;
+  padding-left: 80px;
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  animation-fill-mode: forwards;
+}
+
 .animate_content {
-  animation: animate 2s ease 0.5s;
+  animation: animate 2s ease 0.7s;
 }
 
 .fadeOutHomePageElements {
-  animation: fadeOut 0.1s ease;
+  animation: fadeOut 0.7s ease;
   animation-fill-mode: forwards;
 }
 
