@@ -41,7 +41,6 @@ body{
 .navigationPage{
   background-color: black;
   background-repeat: repeat;
-  padding-left: 80px;
   height: 100%;
   overflow: auto;
   position: absolute;

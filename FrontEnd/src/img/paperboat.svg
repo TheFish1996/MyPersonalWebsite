@@ -1,0 +1,10 @@
+<svg width="135" height="87" viewBox="0 0 135 87" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Group</title><desc>Created using Figma</desc><g filter="url(#a)" transform="translate(-9701 -1127)">
+<g transform="translate(9709.9 1139.95)" fill="#57d6ff">
+<use xlink:href="#b"/><use xlink:href="#c"/><use xlink:href="#d"/></g><g transform="translate(9712.98 1160.76)" fill="#57d6ff"><use xlink:href="#e"/><use xlink:href="#f"/>
+</g></g><defs><filter id="a" filterUnits="userSpaceOnUse" x="9701" y="1127" width="135" height="87" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dy="-4"/><feGaussianBlur stdDeviation="4"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/><feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter><path id="b" d="M25.264 68.286L0 21.926l96.458 47.405-71.194-1.045z"/><path id="c" d="M58.288 0l-27.57 34.873L58.316 48.41 85.561 34.9 58.288 0z"/>
+<path id="d" d="M117.822 21.632l-57.256 27.89 39.806 19.488 17.45-47.378z"/><path id="e" d="M25.8 12.893L0 .161l33.131 3.484-7.331 9.248z"/>
+<path id="f" d="M84.315 12.907L76.033 2.694 111.254 0 84.315 12.907z"/></defs></svg>
