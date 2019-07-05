@@ -42,13 +42,15 @@ function Home(props){
 
    useEffect(() => {
      if(showNavigationPage === true){
+
+       //First we want to animate the main container page with all the elements and fade out all elements of homepage
        showNavbarAnimation((state) => ({
           ...state,
           containerElement: "homePage animate_content",
           elementsShown: "fadeOutHomePageElements"
        }))
 
-
+       //We then set a timeout to make the new navigationpage appear and hide the current elements on the screen
        setTimeout(() => {
           showNavbarAnimation((state) => ({
             ...state,
@@ -58,6 +60,38 @@ function Home(props){
           }))
        }, 1500)
 
+       //Then we set the container element to have no animation class attached to it, so we can reannimate again
+       setTimeout(() => {
+         showNavbarAnimation((state) => ({
+           ...state,
+          containerElement: "navigationPage"
+         }))
+       }, 3000)
+
+     } else if(showNavigationPage === false && navbarAnimation.containerElement === "navigationPage") {
+       //We only want to trigger this when the navigationpage is false and the actual container is on the navigation page, to avoid animation on load
+       showNavbarAnimation((state) => ({
+        ...state,
+        containerElement: "navigationPage animate_content",
+      }))
+
+        setTimeout(() => {
+          showNavbarAnimation((state) => ({
+            ...state,
+            containerElement: "homePage animate_content",
+            elementsShown: "displayShow",
+            navigationPageElement: "displayHide"
+          }))
+        }, 1500)
+
+        setTimeout(() => {
+          showNavbarAnimation((state) => ({
+            ...state,
+            containerElement: "homePage"
+          }))
+        }, 3000)
+
+        
      }
    }, [showNavigationPage])
 

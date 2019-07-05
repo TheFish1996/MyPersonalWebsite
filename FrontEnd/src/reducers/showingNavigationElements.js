@@ -7,7 +7,7 @@ function showingNavigationElements(state = pageData, action){
         case "SHOW_NAVBAR_PAGE":
             return {
                 ...state,
-                showNavBarPage: true
+                showNavBarPage: !state.showNavBarPage
             }
         default:
             return state

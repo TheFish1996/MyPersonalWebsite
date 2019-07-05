@@ -18,8 +18,8 @@ const mapDispatchToProps = (dispatch) => {
   function NavBarNavigation(props){
 
     const [navRotate, setNavRotate] = useState({
-      value: 0,
-      stayFixed: false
+      value: 2,
+      stayFixed: true
     })
 
     const [rectangleAnimation1, setRectangleAnimation1] = useState("navbarNavigationshape");
@@ -28,7 +28,7 @@ const mapDispatchToProps = (dispatch) => {
     const {linksShow, showNavigationPage} = props
 
     useEffect(() => {
-      if(navRotate.stayFixed === true){
+      if(navRotate.stayFixed === false){
         showNavigationPage();
       }
     }, [navRotate.stayFixed])
