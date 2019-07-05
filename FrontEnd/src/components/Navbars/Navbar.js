@@ -1,4 +1,4 @@
-import '../styles/Navbar.css';
+import '../../styles/Navbar.css';
 import React, {useState, useEffect} from "react";
 import {
     Row,
@@ -6,9 +6,8 @@ import {
   } from "reactstrap";
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
-import {showNavigationPage} from '../actions/showingNavigationElement'
+import {showNavigationPage} from '../../actions/showingNavigationElement'
 
-const logo = require("../img/Picture1.png")
 
 const mapDispatchToProps = (dispatch) => {
   return {

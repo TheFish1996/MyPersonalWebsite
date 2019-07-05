@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from '../Navbar'
 import {
   Fade, 
   Container, 

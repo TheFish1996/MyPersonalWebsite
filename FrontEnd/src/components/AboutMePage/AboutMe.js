@@ -1,6 +1,5 @@
 import '../../styles/AboutMe.css';
 import React, { useState, useEffect } from 'react';
-import NavBar from '../Navbar'
 import Overview from './Overview'
 import Biography from './Biography'
 import {
@@ -32,7 +31,6 @@ function AboutMe(props){
 
     return (
         <div>
-            <NavBar pageName={"About Me"} classDefinition={"navbar-test"} />
             <Container fluid className="aboutMePage">
                 <Row>
                     <Col className="aboutMeBeginningLeft" xs="3" sm="2" md="2" lg ="2" xl="1">

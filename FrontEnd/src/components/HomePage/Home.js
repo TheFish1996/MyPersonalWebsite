@@ -2,7 +2,7 @@ import '../../styles/Home.css';
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import AnimatedText from './AnimatedText'
-import NavBar from '../Navbar'
+import NavBar from '../Navbars/Navbar'
 import NavigationPage from '../NavigationPage'
 import NewsCarousel from './NewsCarousel'
 import {connect} from 'react-redux'
@@ -32,13 +32,13 @@ function Home(props){
     elementsShown: ""
   })
 
-   useEffect(() => {
-      const response = async () => {
-        let result = await getAllNews();
-        setNewsData(result.articles)
-      }
-      response();
-   }, [])
+  //  useEffect(() => {
+  //     const response = async () => {
+  //       let result = await getAllNews();
+  //       setNewsData(result.articles)
+  //     }
+  //     response();
+  //  }, [])
 
    useEffect(() => {
      if(showNavigationPage === true){
@@ -56,7 +56,7 @@ function Home(props){
             elementsShown: "displayHide",
             navigationPageElement: "displayShow"
           }))
-       }, 1000)
+       }, 1500)
 
      }
    }, [showNavigationPage])
@@ -114,6 +114,30 @@ function Home(props){
           <Row>
             <p>Placeholder</p>
           </Row>
+          <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+          <p>Placeholder</p>
+        </Row>
+        <Row>
+        <p>Placeholder</p>
+      </Row>
+      <Row>
+        <p>Placeholder</p>
+      </Row>
+      <Row>
+        <p>Placeholder</p>
+      </Row>
+      <Row>
+        <p>Placeholder</p>
+      </Row>
         </div>
       </Container>
     </div>

@@ -1,6 +1,5 @@
 import '../../styles/Projects.css';
 import React, { useState, useEffect } from 'react';
-import NavBar from '../Navbar'
 import SmartRouter from './SmartRouter'
 import {
     Fade, 
@@ -33,7 +32,6 @@ function Projects(props){
 
     return (
         <div>
-            <NavBar pageName={"Projects"} classDefinition={"navbar-project"} />
             <div className="projectsPageDropdown">
                 <Collapse style={{marginLeft: "auto", marginRight: "auto", width: "200px"}} isOpen={collapse}>
                     <Card style={{backgroundColor: "#0b0f32"}}>
