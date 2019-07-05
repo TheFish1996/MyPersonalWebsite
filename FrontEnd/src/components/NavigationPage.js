@@ -1,5 +1,6 @@
 import '../styles/NavigationPage.css';
 import React, {useState, useEffect} from "react";
+import NavbarNavigation from './Navbars/NavbarNavigation'
 import {
     Row,
     Col,
@@ -14,37 +15,35 @@ const paperBoat = require("../img/paperboat.svg")
 function NavigationPage(props){
   return (
     <div>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <p>Testing</p>
-    </Row>
-    <Row>
-      <div class="ocean">
-        <div class="boat-animation">
-          <img alt="Wellen" src={wavesRear} class="waves waves--rear"></img>
-          <div class="paperboat">
-            <div class="paperboat__sink">
-              <img alt="PaperBoat" width="110" height="71" src={paperBoat} class="paperboat__boat" id="paperboat" ></img>
+      <NavbarNavigation linksShow={"navbarLinks"} />
+      <Row>
+        <p>Testing</p>
+      </Row>
+      <Row>
+        <p>Testing</p>
+      </Row>
+      <Row>
+        <p>Testing</p>
+      </Row>
+      <Row>
+        <p>Testing</p>
+      </Row>
+      <Row>
+        <p>Testing</p>
+      </Row>
+      <Row>
+        <div class="ocean">
+          <div class="boat-animation">
+            <img alt="Wellen" src={wavesRear} class="waves waves--rear"></img>
+            <div class="paperboat">
+              <div class="paperboat__sink">
+                <img alt="PaperBoat" width="110" height="71" src={paperBoat} class="paperboat__boat" id="paperboat" ></img>
+              </div>
             </div>
+            <img alt="Wellen" src={wavesFront} class="waves waves--front"></img>
           </div>
-          <img alt="Wellen" src={wavesFront} class="waves waves--front"></img>
         </div>
-      </div>
-    </Row>
+      </Row>
     </div>
   )
 }
