@@ -43,6 +43,12 @@ const mapDispatchToProps = (dispatch) => {
       navRotateStyle = "navbarCollapse isActive"
     } else {
       navRotateStyle = "navbarCollapse isActive activeClick"
+      setTimeout(() => {
+        setNavRotate({
+          value: 0,
+          stayFixed: false
+        })
+      }, 2500)
     }
 
     if(linksShow === "navbarLinksHidden"){

@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch) => {
   function NavBarNavigation(props){
 
     const [navRotate, setNavRotate] = useState({
-      value: 2,
+      value: 0,
       stayFixed: true
     })
 
@@ -37,12 +37,26 @@ const mapDispatchToProps = (dispatch) => {
     let nameTitle = "navbarNavigationtitleContractIn noAnimation"
     let navRotateStyle = "navbarNavigationCollapse"
 
-    if(navRotate.value === 0 && navRotate.stayFixed === false){
-      navRotateStyle = "navbarNavigationCollapse"
-    } else if(navRotate.value === 1 && navRotate.stayFixed === false){
+    // if(navRotate.value === 0 && navRotate.stayFixed === true){
+    //   navRotateStyle = "navbarNavigationCollapse"
+    // } else if(navRotate.value === 1 && navRotate.stayFixed === true){
+    //   navRotateStyle = "navbarNavigationCollapse navbarNavigationisActive"
+    // } else {
+    //   navRotateStyle = "navbarNavigationCollapse navbarNavigationisActive navbarNavigationactiveClick"
+    // }
+
+    if(navRotate.value === 0 && navRotate.stayFixed === true){
+      navRotateStyle = "navbarNavigationCollapse navbarNavigationisActive navbarNavigationactiveClick"
+    } else if(navRotate.value === 1 && navRotate.stayFixed === true){
       navRotateStyle = "navbarNavigationCollapse navbarNavigationisActive"
     } else {
-      navRotateStyle = "navbarNavigationCollapse navbarNavigationisActive navbarNavigationactiveClick"
+      navRotateStyle = "navbarNavigationCollapse"
+      setTimeout(() => {
+        setNavRotate({
+          value: 0,
+          stayFixed: true
+        })
+      }, 3000)
     }
 
     if(linksShow === "navbarLinksHidden"){
