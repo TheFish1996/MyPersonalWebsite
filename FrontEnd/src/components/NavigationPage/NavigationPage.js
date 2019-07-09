@@ -1,6 +1,7 @@
-import '../styles/NavigationPage.css';
+import '../../styles/NavigationPage.css';
+import '../../styles/Rain.css';
 import React, {useState, useEffect} from "react";
-import NavbarNavigation from './Navbars/NavbarNavigation'
+import NavbarNavigation from '../Navbars/NavbarNavigation'
 import {
     Row,
     Col,
@@ -8,26 +9,25 @@ import {
   } from "reactstrap";
 import {Link} from 'react-router-dom'
 
-const wavesFront = require("../img/waves-front.svg")
-const wavesRear = require("../img/waves-rear.svg")
-const paperBoat = require("../img/paperboat.svg")
+const wavesFront = require("../../img/waves-front.svg")
+const wavesRear = require("../../img/waves-rear.svg")
+const paperBoat = require("../../img/paperboat.svg")
 
 function NavigationPage(props){
+
+
+  let rainArray = [];
+  for(let i = 0; i < 149; i++){
+    rainArray.push(<div key={i} className="rain"></div>)
+  }
+
+
   return (
     <div>
+      <div className="rainMask">
+        {rainArray}
+      </div>
       <NavbarNavigation linksShow={"navbarLinks"} />
-      <Row>
-        <p>Testing</p>
-      </Row>
-      <Row>
-        <p>Testing</p>
-      </Row>
-      <Row>
-        <p>Testing</p>
-      </Row>
-      <Row>
-        <p>Testing</p>
-      </Row>
       <Row>
         <p>Testing</p>
       </Row>

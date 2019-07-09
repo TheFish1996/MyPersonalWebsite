@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import AnimatedText from './AnimatedText'
 import NavBar from '../Navbars/Navbar'
-import NavigationPage from '../NavigationPage'
+import NavigationPage from '../NavigationPage/NavigationPage'
 import NewsCarousel from './NewsCarousel'
 import {connect} from 'react-redux'
 import {
@@ -106,11 +106,11 @@ function Home(props){
 
   return (
     <div>
-      <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className={navbarAnimation.containerElement}>
-        <div className={navbarAnimation.navigationPageElement}>
+      <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className={"navigationPage"}>
+        <div className={"displayShow"}>
           <NavigationPage />
         </div>
-        <div className={navbarAnimation.elementsShown}>
+        <div className={"displayHide"}>
           <NavBar linksShow={linksShow} />
           <Row className="newsHomePage">
             <Col xs="11" sm="8" md="7" lg="3" xl="3" className="newsHomePageCarousel">
