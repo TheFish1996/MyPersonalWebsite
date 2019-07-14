@@ -3,7 +3,7 @@
     background: linear-gradient(to bottom, #003e85 0%, #57d6ff 100%);
     height: 50px;
     position: absolute;
-    width: 1px;
+    width: 2px;
   }
   
   .rain:nth-of-type(1) {
@@ -12,14 +12,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 82%;
-    opacity: 0.32;
+    opacity: 1;
     top: -84%;
   }
   
   @keyframes rain-1 {
     0% {
       left: 82%;
-      opacity: 0.32;
+      opacity: 1;
       top: -84%;
     }
     100% {
@@ -33,14 +33,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 43%;
-    opacity: 0.35;
+    opacity: 1;
     top: -74%;
   }
   
   @keyframes rain-2 {
     0% {
       left: 43%;
-      opacity: 0.35;
+      opacity: 1;
       top: -74%;
     }
     100% {
@@ -54,14 +54,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 26%;
-    opacity: 0.58;
+    opacity: 1;
     top: -83%;
   }
   
   @keyframes rain-3 {
     0% {
       left: 26%;
-      opacity: 0.58;
+      opacity: 1;
       top: -83%;
     }
     100% {
@@ -75,14 +75,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 2%;
-    opacity: 0.35;
+    opacity: 1;
     top: -69%;
   }
   
   @keyframes rain-4 {
     0% {
       left: 2%;
-      opacity: 0.35;
+      opacity: 1;
       top: -69%;
     }
     100% {
@@ -96,14 +96,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 65%;
-    opacity: 0.45;
+    opacity: 1;
     top: -67%;
   }
   
   @keyframes rain-5 {
     0% {
       left: 65%;
-      opacity: 0.45;
+      opacity: 1;
       top: -67%;
     }
     100% {
@@ -117,14 +117,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 34%;
-    opacity: 0.57;
+    opacity: 1;
     top: -78%;
   }
   
   @keyframes rain-6 {
     0% {
       left: 34%;
-      opacity: 0.57;
+      opacity: 1;
       top: -78%;
     }
     100% {
@@ -138,14 +138,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 83%;
-    opacity: 0.57;
+    opacity: 1;
     top: -57%;
   }
   
   @keyframes rain-7 {
     0% {
       left: 83%;
-      opacity: 0.57;
+      opacity: 1;
       top: -57%;
     }
     100% {
@@ -159,14 +159,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 75%;
-    opacity: 0.48;
+    opacity: 1;
     top: -65%;
   }
   
   @keyframes rain-8 {
     0% {
       left: 75%;
-      opacity: 0.48;
+      opacity: 1;
       top: -65%;
     }
     100% {
@@ -180,14 +180,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 20%;
-    opacity: 0.56;
+    opacity: 1;
     top: -75%;
   }
   
   @keyframes rain-9 {
     0% {
       left: 20%;
-      opacity: 0.56;
+      opacity: 1;
       top: -75%;
     }
     100% {
@@ -201,14 +201,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 7%;
-    opacity: 0.53;
+    opacity: 1;
     top: -75%;
   }
   
   @keyframes rain-10 {
     0% {
       left: 7%;
-      opacity: 0.53;
+      opacity: 1;
       top: -75%;
     }
     100% {
@@ -222,14 +222,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 59%;
-    opacity: 0.36;
+    opacity: 1;
     top: -57%;
   }
   
   @keyframes rain-11 {
     0% {
       left: 59%;
-      opacity: 0.36;
+      opacity: 1;
       top: -57%;
     }
     100% {
@@ -243,14 +243,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 73%;
-    opacity: 0.37;
+    opacity: 1;
     top: -57%;
   }
   
   @keyframes rain-12 {
     0% {
       left: 73%;
-      opacity: 0.37;
+      opacity: 1;
       top: -57%;
     }
     100% {
@@ -264,14 +264,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 72%;
-    opacity: 0.38;
+    opacity: 1;
     top: -91%;
   }
   
   @keyframes rain-13 {
     0% {
       left: 72%;
-      opacity: 0.38;
+      opacity: 1;
       top: -91%;
     }
     100% {
@@ -285,14 +285,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 62%;
-    opacity: 0.56;
+    opacity: 1;
     top: -51%;
   }
   
   @keyframes rain-14 {
     0% {
       left: 62%;
-      opacity: 0.56;
+      opacity: 1;
       top: -51%;
     }
     100% {
@@ -306,14 +306,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 74%;
-    opacity: 0.45;
+    opacity: 1;
     top: -86%;
   }
   
   @keyframes rain-15 {
     0% {
       left: 74%;
-      opacity: 0.45;
+      opacity: 1;
       top: -86%;
     }
     100% {
@@ -327,14 +327,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 19%;
-    opacity: 0.31;
+    opacity: 1;
     top: -69%;
   }
   
   @keyframes rain-16 {
     0% {
       left: 19%;
-      opacity: 0.31;
+      opacity: 1;
       top: -69%;
     }
     100% {
@@ -348,14 +348,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 88%;
-    opacity: 0.41;
+    opacity: 1;
     top: -70%;
   }
   
   @keyframes rain-17 {
     0% {
       left: 88%;
-      opacity: 0.41;
+      opacity: 1;
       top: -70%;
     }
     100% {
@@ -369,14 +369,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 55%;
-    opacity: 0.58;
+    opacity: 1;
     top: -64%;
   }
   
   @keyframes rain-18 {
     0% {
       left: 55%;
-      opacity: 0.58;
+      opacity: 1;
       top: -64%;
     }
     100% {
@@ -390,14 +390,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 93%;
-    opacity: 0.51;
+    opacity: 1;
     top: -82%;
   }
   
   @keyframes rain-19 {
     0% {
       left: 93%;
-      opacity: 0.51;
+      opacity: 1;
       top: -82%;
     }
     100% {
@@ -411,14 +411,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 82%;
-    opacity: 0.37;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-20 {
     0% {
       left: 82%;
-      opacity: 0.37;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -432,14 +432,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 73%;
-    opacity: 0.48;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-21 {
     0% {
       left: 73%;
-      opacity: 0.48;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -453,14 +453,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 6%;
-    opacity: 0.37;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-22 {
     0% {
       left: 6%;
-      opacity: 0.37;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -474,14 +474,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 23%;
-    opacity: 0.45;
+    opacity: 1;
     top: -61%;
   }
   
   @keyframes rain-23 {
     0% {
       left: 23%;
-      opacity: 0.45;
+      opacity: 1;
       top: -61%;
     }
     100% {
@@ -495,14 +495,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 59%;
-    opacity: 0.45;
+    opacity: 1;
     top: -76%;
   }
   
   @keyframes rain-24 {
     0% {
       left: 59%;
-      opacity: 0.45;
+      opacity: 1;
       top: -76%;
     }
     100% {
@@ -516,14 +516,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 98%;
-    opacity: 0.56;
+    opacity: 1;
     top: -93%;
   }
   
   @keyframes rain-25 {
     0% {
       left: 98%;
-      opacity: 0.56;
+      opacity: 1;
       top: -93%;
     }
     100% {
@@ -537,14 +537,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 11%;
-    opacity: 0.6;
+    opacity: 1;
     top: -99%;
   }
   
   @keyframes rain-26 {
     0% {
       left: 11%;
-      opacity: 0.6;
+      opacity: 1;
       top: -99%;
     }
     100% {
@@ -558,14 +558,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 15%;
-    opacity: 0.51;
+    opacity: 1;
     top: -61%;
   }
   
   @keyframes rain-27 {
     0% {
       left: 15%;
-      opacity: 0.51;
+      opacity: 1;
       top: -61%;
     }
     100% {
@@ -579,14 +579,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 70%;
-    opacity: 0.58;
+    opacity: 1;
     top: -75%;
   }
   
   @keyframes rain-28 {
     0% {
       left: 70%;
-      opacity: 0.58;
+      opacity: 1;
       top: -75%;
     }
     100% {
@@ -600,14 +600,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 93%;
-    opacity: 0.59;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-29 {
     0% {
       left: 93%;
-      opacity: 0.59;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -621,14 +621,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 31%;
-    opacity: 0.34;
+    opacity: 1;
     top: -90%;
   }
   
   @keyframes rain-30 {
     0% {
       left: 31%;
-      opacity: 0.34;
+      opacity: 1;
       top: -90%;
     }
     100% {
@@ -642,14 +642,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 71%;
-    opacity: 0.53;
+    opacity: 1;
     top: -52%;
   }
   
   @keyframes rain-31 {
     0% {
       left: 71%;
-      opacity: 0.53;
+      opacity: 1;
       top: -52%;
     }
     100% {
@@ -663,14 +663,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 41%;
-    opacity: 0.35;
+    opacity: 1;
     top: -77%;
   }
   
   @keyframes rain-32 {
     0% {
       left: 41%;
-      opacity: 0.35;
+      opacity: 1;
       top: -77%;
     }
     100% {
@@ -684,14 +684,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 74%;
-    opacity: 0.54;
+    opacity: 1;
     top: -76%;
   }
   
   @keyframes rain-33 {
     0% {
       left: 74%;
-      opacity: 0.54;
+      opacity: 1;
       top: -76%;
     }
     100% {
@@ -705,14 +705,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 52%;
-    opacity: 0.4;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-34 {
     0% {
       left: 52%;
-      opacity: 0.4;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -726,14 +726,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 94%;
-    opacity: 0.37;
+    opacity: 1;
     top: -69%;
   }
   
   @keyframes rain-35 {
     0% {
       left: 94%;
-      opacity: 0.37;
+      opacity: 1;
       top: -69%;
     }
     100% {
@@ -747,14 +747,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 82%;
-    opacity: 0.38;
+    opacity: 1;
     top: -87%;
   }
   
   @keyframes rain-36 {
     0% {
       left: 82%;
-      opacity: 0.38;
+      opacity: 1;
       top: -87%;
     }
     100% {
@@ -768,14 +768,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 85%;
-    opacity: 0.48;
+    opacity: 1;
     top: -98%;
   }
   
   @keyframes rain-37 {
     0% {
       left: 85%;
-      opacity: 0.48;
+      opacity: 1;
       top: -98%;
     }
     100% {
@@ -789,14 +789,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 63%;
-    opacity: 0.42;
+    opacity: 12;
     top: -80%;
   }
   
   @keyframes rain-38 {
     0% {
       left: 63%;
-      opacity: 0.42;
+      opacity: 12;
       top: -80%;
     }
     100% {
@@ -810,14 +810,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 35%;
-    opacity: 0.54;
+    opacity: 1;
     top: -91%;
   }
   
   @keyframes rain-39 {
     0% {
       left: 35%;
-      opacity: 0.54;
+      opacity: 1;
       top: -91%;
     }
     100% {
@@ -831,14 +831,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 64%;
-    opacity: 0.6;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-40 {
     0% {
       left: 64%;
-      opacity: 0.6;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -852,14 +852,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 27%;
-    opacity: 0.58;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-41 {
     0% {
       left: 27%;
-      opacity: 0.58;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -873,14 +873,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 90%;
-    opacity: 0.48;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-42 {
     0% {
       left: 90%;
-      opacity: 0.48;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -894,14 +894,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 76%;
-    opacity: 0.31;
+    opacity: 1;
     top: -99%;
   }
   
   @keyframes rain-43 {
     0% {
       left: 76%;
-      opacity: 0.31;
+      opacity: 1;
       top: -99%;
     }
     100% {
@@ -915,14 +915,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 44%;
-    opacity: 0.48;
+    opacity: 1;
     top: -51%;
   }
   
   @keyframes rain-44 {
     0% {
       left: 44%;
-      opacity: 0.48;
+      opacity: 1;
       top: -51%;
     }
     100% {
@@ -936,14 +936,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 84%;
-    opacity: 0.52;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-45 {
     0% {
       left: 84%;
-      opacity: 0.52;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -957,14 +957,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 5%;
-    opacity: 0.52;
+    opacity: 1;
     top: -82%;
   }
   
   @keyframes rain-46 {
     0% {
       left: 5%;
-      opacity: 0.52;
+      opacity: 1;
       top: -82%;
     }
     100% {
@@ -978,14 +978,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 52%;
-    opacity: 0.33;
+    opacity: 1;
     top: -78%;
   }
   
   @keyframes rain-47 {
     0% {
       left: 52%;
-      opacity: 0.33;
+      opacity: 1;
       top: -78%;
     }
     100% {
@@ -999,14 +999,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 1%;
-    opacity: 0.43;
+    opacity: 13;
     top: -98%;
   }
   
   @keyframes rain-48 {
     0% {
       left: 1%;
-      opacity: 0.43;
+      opacity: 13;
       top: -98%;
     }
     100% {
@@ -1020,14 +1020,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 2%;
-    opacity: 0.6;
+    opacity: 1;
     top: -96%;
   }
   
   @keyframes rain-49 {
     0% {
       left: 2%;
-      opacity: 0.6;
+      opacity: 1;
       top: -96%;
     }
     100% {
@@ -1041,14 +1041,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 83%;
-    opacity: 0.38;
+    opacity: 1;
     top: -87%;
   }
   
   @keyframes rain-50 {
     0% {
       left: 83%;
-      opacity: 0.38;
+      opacity: 1;
       top: -87%;
     }
     100% {
@@ -1062,14 +1062,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 40%;
-    opacity: 0.4;
+    opacity: 1;
     top: -82%;
   }
   
   @keyframes rain-51 {
     0% {
       left: 40%;
-      opacity: 0.4;
+      opacity: 1;
       top: -82%;
     }
     100% {
@@ -1083,14 +1083,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 33%;
-    opacity: 0.47;
+    opacity: 17;
     top: -76%;
   }
   
   @keyframes rain-52 {
     0% {
       left: 33%;
-      opacity: 0.47;
+      opacity: 17;
       top: -76%;
     }
     100% {
@@ -1104,14 +1104,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 92%;
-    opacity: 0.45;
+    opacity: 1;
     top: -60%;
   }
   
   @keyframes rain-53 {
     0% {
       left: 92%;
-      opacity: 0.45;
+      opacity: 1;
       top: -60%;
     }
     100% {
@@ -1125,14 +1125,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 89%;
-    opacity: 0.53;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-54 {
     0% {
       left: 89%;
-      opacity: 0.53;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -1146,14 +1146,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 44%;
-    opacity: 0.37;
+    opacity: 1;
     top: -85%;
   }
   
   @keyframes rain-55 {
     0% {
       left: 44%;
-      opacity: 0.37;
+      opacity: 1;
       top: -85%;
     }
     100% {
@@ -1167,14 +1167,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 70%;
-    opacity: 0.35;
+    opacity: 1;
     top: -86%;
   }
   
   @keyframes rain-56 {
     0% {
       left: 70%;
-      opacity: 0.35;
+      opacity: 1;
       top: -86%;
     }
     100% {
@@ -1188,14 +1188,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 83%;
-    opacity: 0.53;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-57 {
     0% {
       left: 83%;
-      opacity: 0.53;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -1209,14 +1209,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 59%;
-    opacity: 0.42;
+    opacity: 12;
     top: -86%;
   }
   
   @keyframes rain-58 {
     0% {
       left: 59%;
-      opacity: 0.42;
+      opacity: 12;
       top: -86%;
     }
     100% {
@@ -1230,14 +1230,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 30%;
-    opacity: 0.51;
+    opacity: 1;
     top: -56%;
   }
   
   @keyframes rain-59 {
     0% {
       left: 30%;
-      opacity: 0.51;
+      opacity: 1;
       top: -56%;
     }
     100% {
@@ -1251,14 +1251,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 47%;
-    opacity: 0.48;
+    opacity: 1;
     top: -78%;
   }
   
   @keyframes rain-60 {
     0% {
       left: 47%;
-      opacity: 0.48;
+      opacity: 1;
       top: -78%;
     }
     100% {
@@ -1272,14 +1272,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 12%;
-    opacity: 0.41;
+    opacity: 1;
     top: -62%;
   }
   
   @keyframes rain-61 {
     0% {
       left: 12%;
-      opacity: 0.41;
+      opacity: 1;
       top: -62%;
     }
     100% {
@@ -1293,14 +1293,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 19%;
-    opacity: 0.38;
+    opacity: 1;
     top: -81%;
   }
   
   @keyframes rain-62 {
     0% {
       left: 19%;
-      opacity: 0.38;
+      opacity: 1;
       top: -81%;
     }
     100% {
@@ -1314,14 +1314,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 78%;
-    opacity: 0.41;
+    opacity: 1;
     top: -72%;
   }
   
   @keyframes rain-63 {
     0% {
       left: 78%;
-      opacity: 0.41;
+      opacity: 1;
       top: -72%;
     }
     100% {
@@ -1335,14 +1335,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 82%;
-    opacity: 0.48;
+    opacity: 1;
     top: -93%;
   }
   
   @keyframes rain-64 {
     0% {
       left: 82%;
-      opacity: 0.48;
+      opacity: 1;
       top: -93%;
     }
     100% {
@@ -1356,14 +1356,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 61%;
-    opacity: 0.56;
+    opacity: 1;
     top: -59%;
   }
   
   @keyframes rain-65 {
     0% {
       left: 61%;
-      opacity: 0.56;
+      opacity: 1;
       top: -59%;
     }
     100% {
@@ -1377,14 +1377,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 8%;
-    opacity: 0.49;
+    opacity: 19;
     top: -61%;
   }
   
   @keyframes rain-66 {
     0% {
       left: 8%;
-      opacity: 0.49;
+      opacity: 19;
       top: -61%;
     }
     100% {
@@ -1398,14 +1398,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 30%;
-    opacity: 0.47;
+    opacity: 17;
     top: -94%;
   }
   
   @keyframes rain-67 {
     0% {
       left: 30%;
-      opacity: 0.47;
+      opacity: 17;
       top: -94%;
     }
     100% {
@@ -1419,14 +1419,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 7%;
-    opacity: 0.38;
+    opacity: 1;
     top: -79%;
   }
   
   @keyframes rain-68 {
     0% {
       left: 7%;
-      opacity: 0.38;
+      opacity: 1;
       top: -79%;
     }
     100% {
@@ -1440,14 +1440,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 26%;
-    opacity: 0.6;
+    opacity: 1;
     top: -66%;
   }
   
   @keyframes rain-69 {
     0% {
       left: 26%;
-      opacity: 0.6;
+      opacity: 1;
       top: -66%;
     }
     100% {
@@ -1461,14 +1461,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 72%;
-    opacity: 0.39;
+    opacity: 1;
     top: -74%;
   }
   
   @keyframes rain-70 {
     0% {
       left: 72%;
-      opacity: 0.39;
+      opacity: 1;
       top: -74%;
     }
     100% {
@@ -1482,14 +1482,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 3%;
-    opacity: 0.33;
+    opacity: 1;
     top: -67%;
   }
   
   @keyframes rain-71 {
     0% {
       left: 3%;
-      opacity: 0.33;
+      opacity: 1;
       top: -67%;
     }
     100% {
@@ -1503,14 +1503,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 100%;
-    opacity: 0.59;
+    opacity: 1;
     top: -82%;
   }
   
   @keyframes rain-72 {
     0% {
       left: 100%;
-      opacity: 0.59;
+      opacity: 1;
       top: -82%;
     }
     100% {
@@ -1524,14 +1524,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 76%;
-    opacity: 0.43;
+    opacity: 13;
     top: -67%;
   }
   
   @keyframes rain-73 {
     0% {
       left: 76%;
-      opacity: 0.43;
+      opacity: 13;
       top: -67%;
     }
     100% {
@@ -1545,14 +1545,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 20%;
-    opacity: 0.45;
+    opacity: 1;
     top: -75%;
   }
   
   @keyframes rain-74 {
     0% {
       left: 20%;
-      opacity: 0.45;
+      opacity: 1;
       top: -75%;
     }
     100% {
@@ -1566,14 +1566,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 92%;
-    opacity: 0.44;
+    opacity: 14;
     top: -62%;
   }
   
   @keyframes rain-75 {
     0% {
       left: 92%;
-      opacity: 0.44;
+      opacity: 14;
       top: -62%;
     }
     100% {
@@ -1587,14 +1587,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 95%;
-    opacity: 0.31;
+    opacity: 1;
     top: -58%;
   }
   
   @keyframes rain-76 {
     0% {
       left: 95%;
-      opacity: 0.31;
+      opacity: 1;
       top: -58%;
     }
     100% {
@@ -1608,14 +1608,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 34%;
-    opacity: 0.36;
+    opacity: 1;
     top: -94%;
   }
   
   @keyframes rain-77 {
     0% {
       left: 34%;
-      opacity: 0.36;
+      opacity: 1;
       top: -94%;
     }
     100% {
@@ -1629,14 +1629,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 5%;
-    opacity: 0.39;
+    opacity: 1;
     top: -69%;
   }
   
   @keyframes rain-78 {
     0% {
       left: 5%;
-      opacity: 0.39;
+      opacity: 1;
       top: -69%;
     }
     100% {
@@ -1650,14 +1650,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 90%;
-    opacity: 0.34;
+    opacity: 1;
     top: -59%;
   }
   
   @keyframes rain-79 {
     0% {
       left: 90%;
-      opacity: 0.34;
+      opacity: 1;
       top: -59%;
     }
     100% {
@@ -1671,14 +1671,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 27%;
-    opacity: 0.44;
+    opacity: 14;
     top: -94%;
   }
   
   @keyframes rain-80 {
     0% {
       left: 27%;
-      opacity: 0.44;
+      opacity: 14;
       top: -94%;
     }
     100% {
@@ -1692,14 +1692,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 79%;
-    opacity: 0.42;
+    opacity: 12;
     top: -85%;
   }
   
   @keyframes rain-81 {
     0% {
       left: 79%;
-      opacity: 0.42;
+      opacity: 12;
       top: -85%;
     }
     100% {
@@ -1713,14 +1713,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 72%;
-    opacity: 0.6;
+    opacity: 1;
     top: -88%;
   }
   
   @keyframes rain-82 {
     0% {
       left: 72%;
-      opacity: 0.6;
+      opacity: 1;
       top: -88%;
     }
     100% {
@@ -1734,14 +1734,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 9%;
-    opacity: 0.46;
+    opacity: 16;
     top: -78%;
   }
   
   @keyframes rain-83 {
     0% {
       left: 9%;
-      opacity: 0.46;
+      opacity: 16;
       top: -78%;
     }
     100% {
@@ -1755,14 +1755,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 13%;
-    opacity: 0.38;
+    opacity: 1;
     top: -58%;
   }
   
   @keyframes rain-84 {
     0% {
       left: 13%;
-      opacity: 0.38;
+      opacity: 1;
       top: -58%;
     }
     100% {
@@ -1776,14 +1776,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 61%;
-    opacity: 0.31;
+    opacity: 1;
     top: -75%;
   }
   
   @keyframes rain-85 {
     0% {
       left: 61%;
-      opacity: 0.31;
+      opacity: 1;
       top: -75%;
     }
     100% {
@@ -1797,14 +1797,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 82%;
-    opacity: 0.42;
+    opacity: 12;
     top: -98%;
   }
   
   @keyframes rain-86 {
     0% {
       left: 82%;
-      opacity: 0.42;
+      opacity: 12;
       top: -98%;
     }
     100% {
@@ -1818,14 +1818,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 23%;
-    opacity: 0.47;
+    opacity: 17;
     top: -79%;
   }
   
   @keyframes rain-87 {
     0% {
       left: 23%;
-      opacity: 0.47;
+      opacity: 17;
       top: -79%;
     }
     100% {
@@ -1839,14 +1839,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 62%;
-    opacity: 0.56;
+    opacity: 1;
     top: -69%;
   }
   
   @keyframes rain-88 {
     0% {
       left: 62%;
-      opacity: 0.56;
+      opacity: 1;
       top: -69%;
     }
     100% {
@@ -1860,14 +1860,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 78%;
-    opacity: 0.54;
+    opacity: 1;
     top: -51%;
   }
   
   @keyframes rain-89 {
     0% {
       left: 78%;
-      opacity: 0.54;
+      opacity: 1;
       top: -51%;
     }
     100% {
@@ -1881,14 +1881,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 6%;
-    opacity: 0.58;
+    opacity: 1;
     top: -52%;
   }
   
   @keyframes rain-90 {
     0% {
       left: 6%;
-      opacity: 0.58;
+      opacity: 1;
       top: -52%;
     }
     100% {
@@ -1902,14 +1902,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 95%;
-    opacity: 0.52;
+    opacity: 1;
     top: -56%;
   }
   
   @keyframes rain-91 {
     0% {
       left: 95%;
-      opacity: 0.52;
+      opacity: 1;
       top: -56%;
     }
     100% {
@@ -1923,14 +1923,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 93%;
-    opacity: 0.53;
+    opacity: 1;
     top: -58%;
   }
   
   @keyframes rain-92 {
     0% {
       left: 93%;
-      opacity: 0.53;
+      opacity: 1;
       top: -58%;
     }
     100% {
@@ -1944,14 +1944,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 31%;
-    opacity: 0.49;
+    opacity: 19;
     top: -59%;
   }
   
   @keyframes rain-93 {
     0% {
       left: 31%;
-      opacity: 0.49;
+      opacity: 19;
       top: -59%;
     }
     100% {
@@ -1965,14 +1965,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 96%;
-    opacity: 0.55;
+    opacity: 1;
     top: -94%;
   }
   
   @keyframes rain-94 {
     0% {
       left: 96%;
-      opacity: 0.55;
+      opacity: 1;
       top: -94%;
     }
     100% {
@@ -1986,14 +1986,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 72%;
-    opacity: 0.43;
+    opacity: 13;
     top: -64%;
   }
   
   @keyframes rain-95 {
     0% {
       left: 72%;
-      opacity: 0.43;
+      opacity: 13;
       top: -64%;
     }
     100% {
@@ -2007,14 +2007,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 14%;
-    opacity: 0.32;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-96 {
     0% {
       left: 14%;
-      opacity: 0.32;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -2028,14 +2028,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 16%;
-    opacity: 0.54;
+    opacity: 1;
     top: -58%;
   }
   
   @keyframes rain-97 {
     0% {
       left: 16%;
-      opacity: 0.54;
+      opacity: 1;
       top: -58%;
     }
     100% {
@@ -2049,14 +2049,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 20%;
-    opacity: 0.53;
+    opacity: 1;
     top: -95%;
   }
   
   @keyframes rain-98 {
     0% {
       left: 20%;
-      opacity: 0.53;
+      opacity: 1;
       top: -95%;
     }
     100% {
@@ -2070,14 +2070,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 12%;
-    opacity: 0.53;
+    opacity: 1;
     top: -96%;
   }
   
   @keyframes rain-99 {
     0% {
       left: 12%;
-      opacity: 0.53;
+      opacity: 1;
       top: -96%;
     }
     100% {
@@ -2091,14 +2091,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 68%;
-    opacity: 0.48;
+    opacity: 1;
     top: -87%;
   }
   
   @keyframes rain-100 {
     0% {
       left: 68%;
-      opacity: 0.48;
+      opacity: 1;
       top: -87%;
     }
     100% {
@@ -2112,14 +2112,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 29%;
-    opacity: 0.39;
+    opacity: 1;
     top: -51%;
   }
   
   @keyframes rain-101 {
     0% {
       left: 29%;
-      opacity: 0.39;
+      opacity: 1;
       top: -51%;
     }
     100% {
@@ -2133,14 +2133,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 42%;
-    opacity: 0.37;
+    opacity: 1;
     top: -85%;
   }
   
   @keyframes rain-102 {
     0% {
       left: 42%;
-      opacity: 0.37;
+      opacity: 1;
       top: -85%;
     }
     100% {
@@ -2154,14 +2154,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 14%;
-    opacity: 0.44;
+    opacity: 14;
     top: -96%;
   }
   
   @keyframes rain-103 {
     0% {
       left: 14%;
-      opacity: 0.44;
+      opacity: 14;
       top: -96%;
     }
     100% {
@@ -2175,14 +2175,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 74%;
-    opacity: 0.49;
+    opacity: 19;
     top: -94%;
   }
   
   @keyframes rain-104 {
     0% {
       left: 74%;
-      opacity: 0.49;
+      opacity: 19;
       top: -94%;
     }
     100% {
@@ -2196,14 +2196,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 80%;
-    opacity: 0.39;
+    opacity: 1;
     top: -73%;
   }
   
   @keyframes rain-105 {
     0% {
       left: 80%;
-      opacity: 0.39;
+      opacity: 1;
       top: -73%;
     }
     100% {
@@ -2217,14 +2217,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 67%;
-    opacity: 0.56;
+    opacity: 1;
     top: -94%;
   }
   
   @keyframes rain-106 {
     0% {
       left: 67%;
-      opacity: 0.56;
+      opacity: 1;
       top: -94%;
     }
     100% {
@@ -2238,14 +2238,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 77%;
-    opacity: 0.54;
+    opacity: 1;
     top: -62%;
   }
   
   @keyframes rain-107 {
     0% {
       left: 77%;
-      opacity: 0.54;
+      opacity: 1;
       top: -62%;
     }
     100% {
@@ -2259,14 +2259,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 77%;
-    opacity: 0.47;
+    opacity: 17;
     top: -95%;
   }
   
   @keyframes rain-108 {
     0% {
       left: 77%;
-      opacity: 0.47;
+      opacity: 17;
       top: -95%;
     }
     100% {
@@ -2280,14 +2280,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 95%;
-    opacity: 0.44;
+    opacity: 14;
     top: -99%;
   }
   
   @keyframes rain-109 {
     0% {
       left: 95%;
-      opacity: 0.44;
+      opacity: 14;
       top: -99%;
     }
     100% {
@@ -2301,14 +2301,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 74%;
-    opacity: 0.45;
+    opacity: 1;
     top: -91%;
   }
   
   @keyframes rain-110 {
     0% {
       left: 74%;
-      opacity: 0.45;
+      opacity: 1;
       top: -91%;
     }
     100% {
@@ -2322,14 +2322,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 77%;
-    opacity: 0.39;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-111 {
     0% {
       left: 77%;
-      opacity: 0.39;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -2343,14 +2343,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 28%;
-    opacity: 0.59;
+    opacity: 1;
     top: -56%;
   }
   
   @keyframes rain-112 {
     0% {
       left: 28%;
-      opacity: 0.59;
+      opacity: 1;
       top: -56%;
     }
     100% {
@@ -2364,14 +2364,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 15%;
-    opacity: 0.48;
+    opacity: 1;
     top: -61%;
   }
   
   @keyframes rain-113 {
     0% {
       left: 15%;
-      opacity: 0.48;
+      opacity: 1;
       top: -61%;
     }
     100% {
@@ -2385,14 +2385,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 88%;
-    opacity: 0.33;
+    opacity: 1;
     top: -99%;
   }
   
   @keyframes rain-114 {
     0% {
       left: 88%;
-      opacity: 0.33;
+      opacity: 1;
       top: -99%;
     }
     100% {
@@ -2406,14 +2406,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 46%;
-    opacity: 0.48;
+    opacity: 1;
     top: -61%;
   }
   
   @keyframes rain-115 {
     0% {
       left: 46%;
-      opacity: 0.48;
+      opacity: 1;
       top: -61%;
     }
     100% {
@@ -2427,14 +2427,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 52%;
-    opacity: 0.42;
+    opacity: 12;
     top: -59%;
   }
   
   @keyframes rain-116 {
     0% {
       left: 52%;
-      opacity: 0.42;
+      opacity: 12;
       top: -59%;
     }
     100% {
@@ -2448,14 +2448,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 11%;
-    opacity: 0.32;
+    opacity: 1;
     top: -88%;
   }
   
   @keyframes rain-117 {
     0% {
       left: 11%;
-      opacity: 0.32;
+      opacity: 1;
       top: -88%;
     }
     100% {
@@ -2469,14 +2469,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 25%;
-    opacity: 0.45;
+    opacity: 1;
     top: -51%;
   }
   
   @keyframes rain-118 {
     0% {
       left: 25%;
-      opacity: 0.45;
+      opacity: 1;
       top: -51%;
     }
     100% {
@@ -2490,14 +2490,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 39%;
-    opacity: 0.52;
+    opacity: 1;
     top: -86%;
   }
   
   @keyframes rain-119 {
     0% {
       left: 39%;
-      opacity: 0.52;
+      opacity: 1;
       top: -86%;
     }
     100% {
@@ -2511,14 +2511,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 95%;
-    opacity: 0.59;
+    opacity: 1;
     top: -66%;
   }
   
   @keyframes rain-120 {
     0% {
       left: 95%;
-      opacity: 0.59;
+      opacity: 1;
       top: -66%;
     }
     100% {
@@ -2532,14 +2532,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 93%;
-    opacity: 0.42;
+    opacity: 12;
     top: -90%;
   }
   
   @keyframes rain-121 {
     0% {
       left: 93%;
-      opacity: 0.42;
+      opacity: 12;
       top: -90%;
     }
     100% {
@@ -2553,14 +2553,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 32%;
-    opacity: 0.6;
+    opacity: 1;
     top: -57%;
   }
   
   @keyframes rain-122 {
     0% {
       left: 32%;
-      opacity: 0.6;
+      opacity: 1;
       top: -57%;
     }
     100% {
@@ -2574,14 +2574,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 91%;
-    opacity: 0.36;
+    opacity: 1;
     top: -74%;
   }
   
   @keyframes rain-123 {
     0% {
       left: 91%;
-      opacity: 0.36;
+      opacity: 1;
       top: -74%;
     }
     100% {
@@ -2595,14 +2595,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 1%;
-    opacity: 0.56;
+    opacity: 1;
     top: -78%;
   }
   
   @keyframes rain-124 {
     0% {
       left: 1%;
-      opacity: 0.56;
+      opacity: 1;
       top: -78%;
     }
     100% {
@@ -2616,14 +2616,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 55%;
-    opacity: 0.54;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-125 {
     0% {
       left: 55%;
-      opacity: 0.54;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -2637,14 +2637,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 13%;
-    opacity: 0.55;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-126 {
     0% {
       left: 13%;
-      opacity: 0.55;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -2658,14 +2658,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 61%;
-    opacity: 0.55;
+    opacity: 1;
     top: -67%;
   }
   
   @keyframes rain-127 {
     0% {
       left: 61%;
-      opacity: 0.55;
+      opacity: 1;
       top: -67%;
     }
     100% {
@@ -2679,14 +2679,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 67%;
-    opacity: 0.44;
+    opacity: 14;
     top: -57%;
   }
   
   @keyframes rain-128 {
     0% {
       left: 67%;
-      opacity: 0.44;
+      opacity: 14;
       top: -57%;
     }
     100% {
@@ -2700,14 +2700,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 14%;
-    opacity: 0.4;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-129 {
     0% {
       left: 14%;
-      opacity: 0.4;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -2721,14 +2721,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 98%;
-    opacity: 0.37;
+    opacity: 1;
     top: -73%;
   }
   
   @keyframes rain-130 {
     0% {
       left: 98%;
-      opacity: 0.37;
+      opacity: 1;
       top: -73%;
     }
     100% {
@@ -2742,14 +2742,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 99%;
-    opacity: 0.59;
+    opacity: 1;
     top: -98%;
   }
   
   @keyframes rain-131 {
     0% {
       left: 99%;
-      opacity: 0.59;
+      opacity: 1;
       top: -98%;
     }
     100% {
@@ -2763,14 +2763,14 @@
     animation-duration: 7s;
     animation-iteration-count: infinite;
     left: 32%;
-    opacity: 0.42;
+    opacity: 12;
     top: -92%;
   }
   
   @keyframes rain-132 {
     0% {
       left: 32%;
-      opacity: 0.42;
+      opacity: 12;
       top: -92%;
     }
     100% {
@@ -2784,14 +2784,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 100%;
-    opacity: 0.41;
+    opacity: 1;
     top: -97%;
   }
   
   @keyframes rain-133 {
     0% {
       left: 100%;
-      opacity: 0.41;
+      opacity: 1;
       top: -97%;
     }
     100% {
@@ -2805,14 +2805,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 25%;
-    opacity: 0.34;
+    opacity: 1;
     top: -59%;
   }
   
   @keyframes rain-134 {
     0% {
       left: 25%;
-      opacity: 0.34;
+      opacity: 1;
       top: -59%;
     }
     100% {
@@ -2826,14 +2826,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 42%;
-    opacity: 0.44;
+    opacity: 14;
     top: -97%;
   }
   
   @keyframes rain-135 {
     0% {
       left: 42%;
-      opacity: 0.44;
+      opacity: 14;
       top: -97%;
     }
     100% {
@@ -2847,14 +2847,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 81%;
-    opacity: 0.34;
+    opacity: 1;
     top: -71%;
   }
   
   @keyframes rain-136 {
     0% {
       left: 81%;
-      opacity: 0.34;
+      opacity: 1;
       top: -71%;
     }
     100% {
@@ -2868,14 +2868,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 42%;
-    opacity: 0.36;
+    opacity: 1;
     top: -53%;
   }
   
   @keyframes rain-137 {
     0% {
       left: 42%;
-      opacity: 0.36;
+      opacity: 1;
       top: -53%;
     }
     100% {
@@ -2889,14 +2889,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 18%;
-    opacity: 0.54;
+    opacity: 1;
     top: -64%;
   }
   
   @keyframes rain-138 {
     0% {
       left: 18%;
-      opacity: 0.54;
+      opacity: 1;
       top: -64%;
     }
     100% {
@@ -2910,14 +2910,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 83%;
-    opacity: 0.59;
+    opacity: 1;
     top: -87%;
   }
   
   @keyframes rain-139 {
     0% {
       left: 83%;
-      opacity: 0.59;
+      opacity: 1;
       top: -87%;
     }
     100% {
@@ -2931,14 +2931,14 @@
     animation-duration: 9s;
     animation-iteration-count: infinite;
     left: 77%;
-    opacity: 0.32;
+    opacity: 1;
     top: -65%;
   }
   
   @keyframes rain-140 {
     0% {
       left: 77%;
-      opacity: 0.32;
+      opacity: 1;
       top: -65%;
     }
     100% {
@@ -2952,14 +2952,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 60%;
-    opacity: 0.33;
+    opacity: 1;
     top: -59%;
   }
   
   @keyframes rain-141 {
     0% {
       left: 60%;
-      opacity: 0.33;
+      opacity: 1;
       top: -59%;
     }
     100% {
@@ -2973,14 +2973,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 26%;
-    opacity: 0.41;
+    opacity: 1;
     top: -63%;
   }
   
   @keyframes rain-142 {
     0% {
       left: 26%;
-      opacity: 0.41;
+      opacity: 1;
       top: -63%;
     }
     100% {
@@ -2994,14 +2994,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 24%;
-    opacity: 0.52;
+    opacity: 1;
     top: -55%;
   }
   
   @keyframes rain-143 {
     0% {
       left: 24%;
-      opacity: 0.52;
+      opacity: 1;
       top: -55%;
     }
     100% {
@@ -3015,14 +3015,14 @@
     animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 76%;
-    opacity: 0.44;
+    opacity: 14;
     top: -96%;
   }
   
   @keyframes rain-144 {
     0% {
       left: 76%;
-      opacity: 0.44;
+      opacity: 14;
       top: -96%;
     }
     100% {
@@ -3036,14 +3036,14 @@
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 72%;
-    opacity: 0.32;
+    opacity: 1;
     top: -67%;
   }
   
   @keyframes rain-145 {
     0% {
       left: 72%;
-      opacity: 0.32;
+      opacity: 1;
       top: -67%;
     }
     100% {
@@ -3057,14 +3057,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 10%;
-    opacity: 0.45;
+    opacity: 1;
     top: -79%;
   }
   
   @keyframes rain-146 {
     0% {
       left: 10%;
-      opacity: 0.45;
+      opacity: 1;
       top: -79%;
     }
     100% {
@@ -3078,14 +3078,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 60%;
-    opacity: 0.51;
+    opacity: 1;
     top: -100%;
   }
   
   @keyframes rain-147 {
     0% {
       left: 60%;
-      opacity: 0.51;
+      opacity: 1;
       top: -100%;
     }
     100% {
@@ -3099,14 +3099,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 99%;
-    opacity: 0.55;
+    opacity: 1;
     top: -59%;
   }
   
   @keyframes rain-148 {
     0% {
       left: 99%;
-      opacity: 0.55;
+      opacity: 1;
       top: -59%;
     }
     100% {
@@ -3120,14 +3120,14 @@
     animation-duration: 6s;
     animation-iteration-count: infinite;
     left: 24%;
-    opacity: 0.41;
+    opacity: 1;
     top: -80%;
   }
   
   @keyframes rain-149 {
     0% {
       left: 24%;
-      opacity: 0.41;
+      opacity: 1;
       top: -80%;
     }
     100% {
@@ -3141,14 +3141,14 @@
     animation-duration: 5s;
     animation-iteration-count: infinite;
     left: 16%;
-    opacity: 0.49;
+    opacity: 19;
     top: -100%;
   }
   
   @keyframes rain-150 {
     0% {
       left: 16%;
-      opacity: 0.49;
+      opacity: 19;
       top: -100%;
     }
     100% {

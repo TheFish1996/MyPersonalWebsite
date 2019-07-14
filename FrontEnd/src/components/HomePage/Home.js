@@ -13,7 +13,6 @@ import {
   Col, 
 } from 'reactstrap'
 import {getAllNews} from '../../config/data'
-const pdf = require("../../img/Resume.pdf")
 
 const mapStateToProps = (state) => {
   return {
@@ -120,20 +119,6 @@ function Home(props){
           <Row className="animatedText">
             <Col>
               <AnimatedText />
-            </Col>
-          </Row>
-          <Row className="iconsHomePage">
-            <Col xs= "2" md="2" lg="2" xl="2">
-              <a target="_blank" href="https://www.linkedin.com/in/jonathan-fishkin-966737160/"><i className="fab fa-linkedin"></i></a>
-            </Col>
-            <Col xs= "2" md="2" lg="2">
-              <a target="_blank" href="https://github.com/TheFish1996"><i className="fab fa-github"></i></a>
-            </Col>
-            <Col xs= "2" md="2" lg="2" xl="2">
-              <a target="_blank" href={pdf}><i className="far fa-file-alt"></i></a>
-            </Col>
-            <Col xs= "2" md="2" lg="2" xl="2">
-              <a target="_blank" href={pdf}><i className="far fa-envelope"></i></a>
             </Col>
           </Row>
           <Row>
