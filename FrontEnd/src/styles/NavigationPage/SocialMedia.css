@@ -1,0 +1,61 @@
+.navigationPageSocialMedia{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end; 
+    height: 62vh;
+    z-index: 11;
+    font-size: 21px;
+    text-align: left;
+}
+
+.navigationPageGithub{
+    margin-bottom: 1px;
+}
+
+.navigationPageGithub a{
+    cursor: default;
+}
+
+.navigationPageGithub circle{
+    stroke: black;
+    stroke-width: 3;
+    fill:#D2F4FF;
+    transform-origin: 50px 50px;
+}
+
+.navigationPageGithub image{
+    cursor: pointer;
+}
+
+.navigationPageGithubForward{
+    animation: navigationPageGithubCircleForward 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.navigationPageGithubBack{
+    animation: navigationPageGithubCircleBack 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes navigationPageGithubCircleForward{
+    0%{
+            transform: scale(1.0);
+            opacity: 0;
+    }
+    100%{
+            opacity: 1;
+            transform: scale(50.0);
+    }
+}
+
+@keyframes navigationPageGithubCircleBack{
+    0%{
+            transform: scale(50.0);
+            opacity: 1;
+    }
+    100%{
+            opacity: 0;
+            transform: scale(1.0);
+    }
+} 
