@@ -65,7 +65,7 @@ function SocialMedia(props){
 
 
     return (
-        <Col className={"navigationPageSocialMedia"} xl="4">
+        <Col className={"navigationPageSocialMedia"} xl="2">
             <div className="navigationPageGithub">
                 <a target="_blank" href="https://github.com/TheFish1996">
                     <svg width="75px" height="75px">

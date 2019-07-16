@@ -27,12 +27,44 @@ function NavigationPage(props){
         {rainArray}
       </div>
       <NavbarNavigation linksShow={"navbarLinks"} />
-      <Row style={{paddingLeft: "40px"}}>
+      <Row style={{marginLeft: "40px"}}>
         <SocialMedia />
-        <Col style={{display: "flex", alignItems:"flex-start", flexDirection: "column", height: "10vh"}} xl="4">
-          <p style={{color: "white"}}>Testing</p>
-          <p style={{color: "white"}}>Testing</p>
-          <p style={{color: "white"}}>Testing</p>        
+        <Col style={{height: "10vh"}} xl="4">
+          <Row>
+            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>ABOUT ME</p>
+          </Row>
+          <Row>
+            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>PROJECTS</p>
+          </Row>
+          <Row>
+            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>EXPERIENCE</p>
+          </Row>
+          <Row>
+            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>CONTACT</p>
+          </Row>     
+        </Col>
+        <Col style={{height: "10vh"}} xl="3">
+          <Row>
+            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "300px"}}>?</p>
+          </Row>
+          <Row>
+            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "200px"}}>I</p>
+          </Row> 
+          <Row>
+            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "400px"}}>M</p>
+          </Row> 
+          <Row>
+            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "700px"}}>A</p>
+          </Row>
+          <Row>
+            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "300px"}}>O</p>
+          </Row>
+          <Row>
+            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold"}}>W</p>
+          </Row>
+          <Row>
+            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "200px"}}>H</p>
+          </Row>           
         </Col>
       </Row>
       <Row>
