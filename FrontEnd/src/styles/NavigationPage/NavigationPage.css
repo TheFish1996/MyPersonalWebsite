@@ -489,33 +489,17 @@
         z-index: 10;
 }
 
-.text-focus-in {
-	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.navigationLinksContent{
+        height: 10vh;
 }
 
- @-webkit-keyframes text-focus-in {
-        0% {
-          -webkit-filter: blur(12px);
-                  filter: blur(12px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
-          opacity: 1;
-        }
-      }
-      @keyframes text-focus-in {
-        0% {
-          -webkit-filter: blur(12px);
-                  filter: blur(12px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
-          opacity: 1;
-        }
-      }
+.navigationLinksContent p{
+        color: white;
+        font-size: 80px;
+        height: 70px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 11;
+}
+
       

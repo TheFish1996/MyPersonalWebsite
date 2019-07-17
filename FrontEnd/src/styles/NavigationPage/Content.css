@@ -1,0 +1,138 @@
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.text-focus-in-projects{
+    -webkit-animation: text-focus-in-projects 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in-projects 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.text-focus-in-experience{
+    -webkit-animation: text-focus-in-experience 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in-experience 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.text-focus-in-contact{
+    -webkit-animation: text-focus-in-contact 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in-contact 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+ @-webkit-keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            transform: translate3d(0, +50%, 0);
+            opacity: 0;
+        }
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            transform: translate3d(0, +50%, 0);
+            opacity: 0;
+        }
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            transform: translate3d(0, 0, 0);
+            opacity: 1;
+        }
+}
+
+@-webkit-keyframes text-focus-in-projects {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+  }
+  @keyframes text-focus-in-projects {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes text-focus-in-experience {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+  }
+  @keyframes text-focus-in-experience {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes text-focus-in-contact {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+  }
+  @keyframes text-focus-in-contact {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        transform: translate3d(0, +50%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+
+

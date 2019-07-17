@@ -1,8 +1,9 @@
 import '../../styles/NavigationPage/NavigationPage.css';
-import '../../styles/Rain.css';
+import '../../styles/NavigationPage/Rain.css';
 import React, {useState} from "react";
 import NavbarNavigation from '../Navbars/NavbarNavigation'
 import SocialMedia from './SocialMedia'
+import Content from './Content'
 import {
     Row,
     Col,
@@ -16,56 +17,57 @@ const paperBoat = require("../../img/paperboat.svg")
 
 function NavigationPage(props){
 
+  const [contentObject, setContentObject] = useState("")
+
   let rainArray = [];
   for(let i = 0; i < 149; i++){
     rainArray.push(<div key={i} className="rain"></div>)
   }
 
+  function contentObjectSelector(contentObject){
+    setContentObject(contentObject)
+  }
+
   return (
     <div style={{height: "100vh"}}>
-      <div className="rainMask">
+      <div className="rainMask" style={{display: "block"}}>
         {rainArray}
       </div>
       <NavbarNavigation linksShow={"navbarLinks"} />
       <Row style={{marginLeft: "40px"}}>
         <SocialMedia />
-        <Col style={{height: "10vh"}} xl="4">
+        <Col className="navigationLinksContent" xl="4">
           <Row>
-            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>ABOUT ME</p>
+            <p onMouseEnter={() => {contentObjectSelector("aboutme")}} onMouseLeave={() => {contentObjectSelector("")}} style={contentObject === "aboutme" ? {opacity: "0.5"} : {}}>
+            ABOUT ME
+            </p>
+            { contentObject === "aboutme" &&
+            <i class="fas fa-anchor" style={{fontSize: "25px", verticalAlign: "top", paddingTop: "20px", color: "#57d6ff"}}></i>
+            }
           </Row>
           <Row>
-            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>PROJECTS</p>
+            <p onMouseEnter={() => {contentObjectSelector("projects")}} onMouseLeave={() => {contentObjectSelector("")}} style={contentObject === "projects" ? {opacity: "0.5"} : {}}>
+            PROJECTS</p>
+            { contentObject === "projects" &&
+            <i class="fas fa-anchor" style={{fontSize: "25px", verticalAlign: "top", paddingTop: "20px", color: "#57d6ff"}}></i>
+            }
           </Row>
           <Row>
-            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>EXPERIENCE</p>
+            <p onMouseEnter={() => {contentObjectSelector("experience")}} onMouseLeave={() => {contentObjectSelector("")}} style={contentObject === "experience" ? {opacity: "0.5"} : {}}>
+            EXPERIENCE</p>
+            { contentObject === "experience" &&
+            <i class="fas fa-anchor" style={{fontSize: "25px", verticalAlign: "top", paddingTop: "20px", color: "#57d6ff"}}></i>
+            }
           </Row>
           <Row>
-            <p style={{color: "white", fontSize: "80px", height: "70px", fontWeight: "bold"}}>CONTACT</p>
+            <p onMouseEnter={() => {contentObjectSelector("contact")}} onMouseLeave={() => {contentObjectSelector("")}} style={contentObject === "contact" ? {opacity: "0.5"} : {}}>
+            CONTACT</p>
+            { contentObject === "contact" &&
+            <i class="fas fa-anchor" style={{fontSize: "25px", verticalAlign: "top", paddingTop: "20px", color: "#57d6ff"}}></i>
+            }
           </Row>     
         </Col>
-        <Col style={{height: "10vh"}} xl="3">
-          <Row>
-            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "300px"}}>?</p>
-          </Row>
-          <Row>
-            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "200px"}}>I</p>
-          </Row> 
-          <Row>
-            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "400px"}}>M</p>
-          </Row> 
-          <Row>
-            <p className="text-focus-in" style={{color: "#57d6ff", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "700px"}}>A</p>
-          </Row>
-          <Row>
-            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "300px"}}>O</p>
-          </Row>
-          <Row>
-            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold"}}>W</p>
-          </Row>
-          <Row>
-            <p className="text-focus-in" style={{color: "#282828", fontSize: "40px", height: "50px", fontWeight: "bold", paddingLeft: "200px"}}>H</p>
-          </Row>           
-        </Col>
+        <Content contentObject={contentObject} />
       </Row>
       <Row>
         <div className="ocean">
