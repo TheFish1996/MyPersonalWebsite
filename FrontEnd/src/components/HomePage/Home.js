@@ -105,11 +105,11 @@ function Home(props){
 
   return (
     <div>
-      <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className={"navigationPage"}>
-        <div className={"displayShow"}>
+      <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className={navbarAnimation.containerElement}>
+        <div className={navbarAnimation.navigationPageElement}>
           <NavigationPage />
         </div>
-        <div className={"displayHide"}>
+        <div className={navbarAnimation.elementsShown}>
           <NavBar linksShow={linksShow} />
           <Row className="newsHomePage">
             <Col xs="11" sm="8" md="7" lg="3" xl="3" className="newsHomePageCarousel">

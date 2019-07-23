@@ -112,19 +112,19 @@ const mapDispatchToProps = (dispatch) => {
           <Col className={linksShow} lg="4" xl="4">
             <div className="svg-wrap">
               <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
-                <text x="20" y="30">About Me</text>
+                <text fill="black" x="25" y="30">Projects</text>
                 <rect className={rectangleAnimation1} onMouseEnter={() => {setNavAnimation(1)}} onMouseLeave={() => {setNavAnimationBack(1)}} onClick={() => {setNavAnimation(1)}} height="50" width="110" />
               </svg>
             </div>
             <div className="svg-wrap">
               <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
-                <text x="25" y="30">Projects</text>
+                <text fill="black" x="20" y="30">Experience</text>
                 <rect className={rectangleAnimation2} onMouseEnter={() => {setNavAnimation(2)}} onMouseLeave={() => {setNavAnimationBack(2)}} onClick={() => {setNavAnimation(2)}} height="50" width="110" />
               </svg>
             </div>
             <div className="svg-wrap">
               <svg height="50" width="130" xmlns="http://www.w3.org/2000/svg">
-                <text x="20" y="30">Experience</text>
+                <text fill="black" x="25" y="30">Contact</text>
                 <rect className={rectangleAnimation3} onMouseEnter={() => {setNavAnimation(3)}} onMouseLeave={() => {setNavAnimationBack(3)}} onClick={() => {setNavAnimation(3)}} height="50" width="110" />
               </svg>
             </div>
