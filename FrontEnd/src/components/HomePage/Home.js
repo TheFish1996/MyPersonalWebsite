@@ -6,6 +6,7 @@ import NavBar from '../Navbars/Navbar'
 import NavigationPage from '../NavigationPage/NavigationPage'
 import NewsCarousel from './NewsCarousel'
 import {connect} from 'react-redux'
+import Particles from 'react-particles-js';
 import {
   Fade, 
   Container, 
@@ -13,6 +14,8 @@ import {
   Col, 
 } from 'reactstrap'
 import {getAllNews} from '../../config/data'
+
+const windowheight = window.innerHeight;
 
 const mapStateToProps = (state) => {
   return {
@@ -122,41 +125,7 @@ function Home(props){
             </Col>
           </Row>
           <Row>
-            <p>Placeholder</p>
           </Row>
-          <Row>
-            <p>Placeholder</p>
-          </Row>
-          <Row>
-            <p>Placeholder</p>
-          </Row>
-          <Row>
-            <p>Placeholder</p>
-          </Row>
-          <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-          <p>Placeholder</p>
-        </Row>
-        <Row>
-        <p>Placeholder</p>
-      </Row>
-      <Row>
-        <p>Placeholder</p>
-      </Row>
-      <Row>
-        <p>Placeholder</p>
-      </Row>
-      <Row>
-        <p>Placeholder</p>
-      </Row>
         </div>
       </Container>
     </div>

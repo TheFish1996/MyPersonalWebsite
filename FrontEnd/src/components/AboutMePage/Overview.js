@@ -5,6 +5,7 @@ import {
     Row, 
     Col, 
   } from 'reactstrap'
+  import Particles from 'react-particles-js';
 
     function Overview(props){
         return (
