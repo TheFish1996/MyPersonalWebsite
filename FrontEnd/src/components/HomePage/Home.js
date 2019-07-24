@@ -124,21 +124,28 @@ function Home(props){
               <AnimatedText />
             </Col>
           </Row>
-          <Row>
+          <Row className="test">
             <Particles
             params={{
-                "fps_limit": 28,
+                "fps_limit": 30,
                 "particles": {
                     "number": {
                         "value": 200,
                         "density": {
                             "enable": false
-                        }
+                        },
+                    "color": {
+                        "value": "#000000"
+                      }
+                    },
+                    "size": {
+                      "value": 1
                     },
                     "line_linked": {
                         "enable": true,
                         "distance": 30,
-                        "opacity": 0.4
+                        "opacity": 0.3,
+                        "color": "#000000"
                     },
                     "move": {
                         "speed": 1
@@ -150,12 +157,12 @@ function Home(props){
                             "speed": 2,
                             "sync": false
                         },
-                        "value": 0.4
+                        "value": 0.8
                     }
                 },
                 "polygon": {
                     "enable": true,
-                    "scale": 0.8,
+                    "scale": 0.5,
                     "type": "inline",
                     "move": {
                         "radius": 10
@@ -164,10 +171,11 @@ function Home(props){
                     "inline": {
                         "arrangement": "equidistant"
                     },
+                    "color" : "#efff00",
                     "draw": {
                         "enable": true,
                         "stroke": {
-                            "color": "rgba(255, 255, 255, .2)"
+                            "color": "rgba(0, 0, 0, .4)"
                         }
                     }
                 },
@@ -182,7 +190,7 @@ function Home(props){
                     "modes": {
                         "bubble": {
                             "size": 6,
-                            "distance": 40
+                            "distance": 40,
                         }
                     }
                 }
