@@ -114,18 +114,9 @@ function Home(props){
         </div>
         <div className={navbarAnimation.elementsShown}>
           <NavBar linksShow={linksShow} />
-          <Row className="newsHomePage">
-            <Col xs="11" sm="8" md="7" lg="3" xl="3" className="newsHomePageCarousel">
-              <NewsCarousel newsData={newsData} />
-            </Col>
-          </Row>
-          <Row className="animatedText">
-            <Col>
-              <AnimatedText />
-            </Col>
-          </Row>
           <Row className="test">
             <Particles
+            style= {{marginLeft: "500px"}}
             params={{
                 "fps_limit": 30,
                 "particles": {
@@ -134,17 +125,17 @@ function Home(props){
                         "density": {
                             "enable": false
                         },
+                    },
                     "color": {
-                        "value": "#000000"
-                      }
+                      "value": "#003e85"
                     },
                     "size": {
-                      "value": 1
+                      "value": 2
                     },
                     "line_linked": {
                         "enable": true,
-                        "distance": 30,
-                        "opacity": 0.3,
+                        "distance": 35,
+                        "opacity": 0.4,
                         "color": "#000000"
                     },
                     "move": {
@@ -157,25 +148,24 @@ function Home(props){
                             "speed": 2,
                             "sync": false
                         },
-                        "value": 0.8
+                        "value": 0.9
                     }
                 },
                 "polygon": {
                     "enable": true,
-                    "scale": 0.5,
+                    "scale": 0.7,
                     "type": "inline",
                     "move": {
-                        "radius": 10
+                        "radius": 10,
                     },
                     "url": "/deer.svg",
                     "inline": {
                         "arrangement": "equidistant"
                     },
-                    "color" : "#efff00",
                     "draw": {
                         "enable": true,
                         "stroke": {
-                            "color": "rgba(0, 0, 0, .4)"
+                            "color": "rgba(0, 0, 0, .4)",
                         }
                     }
                 },
@@ -189,7 +179,7 @@ function Home(props){
                     },
                     "modes": {
                         "bubble": {
-                            "size": 6,
+                            "size": 5,
                             "distance": 40,
                         }
                     }
