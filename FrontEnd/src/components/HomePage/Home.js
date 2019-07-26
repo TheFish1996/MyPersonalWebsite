@@ -121,7 +121,7 @@ function Home(props){
                 "fps_limit": 30,
                 "particles": {
                     "number": {
-                        "value": 200,
+                        "value": 800,
                         "density": {
                             "enable": false
                         },
@@ -134,8 +134,8 @@ function Home(props){
                     },
                     "line_linked": {
                         "enable": true,
-                        "distance": 35,
-                        "opacity": 0.4,
+                        "distance": 30,
+                        "opacity": 0.5,
                         "color": "#000000"
                     },
                     "move": {
@@ -153,10 +153,10 @@ function Home(props){
                 },
                 "polygon": {
                     "enable": true,
-                    "scale": 0.7,
+                    "scale": 1,
                     "type": "inline",
                     "move": {
-                        "radius": 10,
+                        "radius": 5,
                     },
                     "url": "/deer.svg",
                     "inline": {
@@ -165,7 +165,7 @@ function Home(props){
                     "draw": {
                         "enable": true,
                         "stroke": {
-                            "color": "rgba(0, 0, 0, .4)",
+                            "color": "rgba(0, 0, 0, .3)",
                         }
                     }
                 },
