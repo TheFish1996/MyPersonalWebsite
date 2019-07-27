@@ -115,15 +115,15 @@ function Home(props){
         <div className={navbarAnimation.elementsShown}>
           <NavBar linksShow={linksShow} />
           <Row className="test">
+            <Col xl="10">
             <Particles
-            style= {{marginLeft: "500px"}}
             params={{
-                "fps_limit": 30,
+                "fps_limit": 25,
                 "particles": {
                     "number": {
-                        "value": 800,
+                        "value": 600,
                         "density": {
-                            "enable": false
+                            "enable": false,
                         },
                     },
                     "color": {
@@ -165,7 +165,7 @@ function Home(props){
                     "draw": {
                         "enable": true,
                         "stroke": {
-                            "color": "rgba(0, 0, 0, .3)",
+                            "color": "rgba(0, 0, 0, .2)",
                         }
                     }
                 },
@@ -185,6 +185,7 @@ function Home(props){
                     }
                 }
             }} />
+            </Col>
             </Row>
         </div>
       </Container>

@@ -278,5 +278,6 @@ body{
 }
 
 .test{
-  height: 85vh;
+  height: 30vh;
+  width: 100vw;
 }
