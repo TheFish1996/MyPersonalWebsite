@@ -7,6 +7,7 @@ import NavigationPage from '../NavigationPage/NavigationPage'
 import NewsCarousel from './NewsCarousel'
 import {connect} from 'react-redux'
 import Particles from 'react-particles-js';
+import $ from 'jquery';
 import {
   Fade, 
   Container, 
@@ -28,11 +29,14 @@ function Home(props){
   const {showNavigationPage} = props
   const [newsData, setNewsData] = useState([])
   const [linksShow, setLinksShow] = useState("navbarLinks noAnimation")
+  const [canvasElementColor, setCanvasElementColor] = useState("#003e85")
   const [navbarAnimation, showNavbarAnimation] = useState({
     containerElement: "homePage",
     navigationPageElement: "displayHide",
     elementsShown: ""
   })
+
+  const myRef = React.createRef();
 
   //  useEffect(() => {
   //     const response = async () => {
@@ -106,6 +110,13 @@ function Home(props){
       } 
     }
 
+    function mouseMovement(e){
+      console.log("Screen x is: " + e.screenX + "Screen y is: " + e.screenY )
+      if(e.screenX >= 1155 && e.screenY >= 491){
+        setCanvasElementColor("#0fbd3d")
+      }
+    }
+
   return (
     <div>
       <Container onScroll={(e)=>{e.target.addEventListener("scroll", test)}} fluid className={navbarAnimation.containerElement}>
@@ -115,13 +126,13 @@ function Home(props){
         <div className={navbarAnimation.elementsShown}>
           <NavBar linksShow={linksShow} />
           <Row className="test">
-            <Col xl="10">
+            <Col style={{marginTop: "-100px"}} xl="10" onMouseMove={mouseMovement}>
             <Particles
             params={{
                 "fps_limit": 25,
                 "particles": {
                     "number": {
-                        "value": 600,
+                        "value": 550,
                         "density": {
                             "enable": false,
                         },
@@ -156,7 +167,7 @@ function Home(props){
                     "scale": 1,
                     "type": "inline",
                     "move": {
-                        "radius": 5,
+                        "radius": 8,
                     },
                     "url": "/deer.svg",
                     "inline": {
@@ -165,7 +176,7 @@ function Home(props){
                     "draw": {
                         "enable": true,
                         "stroke": {
-                            "color": "rgba(0, 0, 0, .2)",
+                            "color": "rgba(0, 0, 0, 0.1)",
                         }
                     }
                 },
