@@ -277,7 +277,9 @@ body{
   }
 }
 
-.test{
+.animal{
   height: 30vh;
   width: 100vw;
+  margin-top: -180px;
+  margin-left: 50px;
 }

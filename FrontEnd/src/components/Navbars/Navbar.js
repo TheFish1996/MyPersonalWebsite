@@ -25,7 +25,7 @@ const mapDispatchToProps = (dispatch) => {
     const [rectangleAnimation1, setRectangleAnimation1] = useState("shape");
     const [rectangleAnimation2, setRectangleAnimation2] = useState("shape");
     const [rectangleAnimation3, setRectangleAnimation3] = useState("shape");
-    const {linksShow, showNavigationPage} = props
+    const {linksShow, showNavigationPage, setCanvasElements} = props
 
     useEffect(() => {
       if(navRotate.stayFixed === true){
@@ -63,18 +63,22 @@ const mapDispatchToProps = (dispatch) => {
       nameTitle = "titleContractIn"
     }
 
+    //Animates the menu navigatio forward
     function iconAnimationForward(){
       setNavRotate(state => ({
         ...state,
         value: 1,
       }));
     }
+
+    //Animated the menu navigatio backward
     function iconAnimationBackward(){
       setNavRotate(state => ({
         ...state,
         value: 0,
       }));
     }
+    //Animates the full menu navigation on click
     function iconFullAnimation(){
       setNavRotate(state => ({
         value: 2,
@@ -82,7 +86,9 @@ const mapDispatchToProps = (dispatch) => {
       }));
     }
 
+    //Sets the animation for the actual navigation elements and removes animation for animal to lower cpu usage
     function setNavAnimation(value){
+      setCanvasElements(false)
       if(value === 1){
         setRectangleAnimation1("shape shapeAnimation")
       } else if(value === 2){
@@ -92,7 +98,11 @@ const mapDispatchToProps = (dispatch) => {
       }
     }
 
+  //Sets the animation for the actual navigation elements and adds animation for animal back
     function setNavAnimationBack(value){
+      setTimeout(() => {
+        setCanvasElements(true)
+      }, 700)
       if(value === 1){
         setRectangleAnimation1("shape")
       } else if(value === 2){
