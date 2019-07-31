@@ -278,8 +278,8 @@ body{
 }
 
 .animal{
-  height: 30vh;
+  height: 0vh;
   width: 100vw;
-  margin-top: -180px;
+  margin-top: -10px;
   margin-left: 50px;
 }

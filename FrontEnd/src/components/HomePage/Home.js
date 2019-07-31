@@ -117,9 +117,7 @@ function Home(props){
           <NavBar setCanvasElements={setCanvasElements} linksShow={linksShow} />
         </div>
         { showNavigationPage === false && //Basically going to have one column be the whale but when it comes  to smaller screens it will just be on the side
-          <Row>
-            <Animal canvasElements={canvasElements} />
-          </Row>
+          <Animal canvasElements={canvasElements} />
         }
       </Container>
     </div>

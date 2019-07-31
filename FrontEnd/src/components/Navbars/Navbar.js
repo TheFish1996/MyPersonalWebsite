@@ -102,7 +102,7 @@ const mapDispatchToProps = (dispatch) => {
     function setNavAnimationBack(value){
       setTimeout(() => {
         setCanvasElements(true)
-      }, 700)
+      }, 900)
       if(value === 1){
         setRectangleAnimation1("shape")
       } else if(value === 2){
