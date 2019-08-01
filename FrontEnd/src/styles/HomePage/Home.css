@@ -283,3 +283,29 @@ body{
   margin-top: -10px;
   margin-left: 50px;
 }
+
+.aboutMeProjectsText{
+  opacity: 0;
+}
+
+@-webkit-keyframes text-blur-in {
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+}
+
+@keyframes text-blur-in {
+  0% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+  100% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+}
